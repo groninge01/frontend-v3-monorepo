@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "dev": "npx next dev",
+    "dev-bal": "PROTOCOL=bal pnpm dev",
+    "dev-beets": "PROTOCOL=beets pnpm dev",
+    "build": "PROTOCOL=bal pnpm gen:graphql:prod && next build",
+    "build:dev": "PROTOCOL=bal pnpm gen:graphql:dev && next build",
+    "build-beets": "PROTOCOL=beets pnpm gen:graphql:prod && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix && pnpm run prettier:fix",
+    "lint:all": "pnpm run lint --max-warnings 0 && pnpm run stylelint && pnpm run prettier && pnpm run typecheck",
+    "stylelint": "stylelint '**/*.css'",
+    "stylelint:fix": "pnpm run stylelint -- --fix",
+    "prettier": "prettier --check '**/*.*(md|json|yaml|ts|js|tsx)' --loglevel warn",
+    "prettier:fix": "pnpm run prettier --write",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "prepare": "husky",
+    "gen:grapgql:watch": "pnpm gen:graphql:dev --watch",
+    "gen:graphql:dev": "DOTENV_CONFIG_PATH=./.env.local npx graphql-codegen -r dotenv/config",
+    "gen:graphql:prod": "DOTENV_CONFIG_PATH=./.env npx graphql-codegen -r dotenv/config",
+    "gen:theme-typings": "npx chakra-cli tokens ./lib/shared/services/chakra/themes/bal/bal.theme.ts",
+    "gen:wagmi": "pnpm wagmi generate",
+    "test": "pnpm test:unit & pnpm run test:integration",
+    "test:unit": "vitest",
+    "test:unit:coverage": "vitest --coverage",
+    "test:unit:silent:coverage": "SILENT_TESTS=true vitest --coverage",
+    "test:integration": "vitest -c ./vitest.config.integration.ts",
+    "postinstall": "npm run gen:theme-typings"
+  }
+}
