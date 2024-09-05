@@ -16,7 +16,9 @@
         "name": "next"
       }
     ],
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": { "@/*": ["./src/*"] }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "**/.next"]
