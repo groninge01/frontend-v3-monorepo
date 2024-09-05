@@ -49,8 +49,6 @@ const getRpcOverride = (chain: GqlChain) => {
   return undefined
 }
 
-console.log({ rpc: getRpcOverride(GqlChain.Mainnet) })
-
 export const rpcOverrides: Record<GqlChain, string | undefined> = {
   [GqlChain.Mainnet]: getRpcOverride(GqlChain.Mainnet),
   [GqlChain.Arbitrum]: getRpcOverride(GqlChain.Arbitrum),
