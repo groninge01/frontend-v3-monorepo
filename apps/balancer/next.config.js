@@ -1,7 +1,8 @@
-//@ts-check
-
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next')
+const { withSentryConfig } = require('@sentry/nextjs')
+const { sentryOptions } = require('./sentry.config')
+const path = require('path')
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
@@ -15,6 +16,7 @@ const nextConfig = {
   webpack: config => {
     config.resolve.fallback = { fs: false, net: false, tls: false }
     config.externals.push('pino-pretty', 'lokijs', 'encoding')
+    config.resolve.alias['@'] = path.resolve(__dirname, 'src')
     return config
   },
   logging: {
@@ -34,9 +36,13 @@ const nextConfig = {
   headers: manifestHeaders,
 }
 
+const sentryConfig = passedConfig => withSentryConfig(passedConfig, sentryOptions)
+
 const plugins = [
   // Add more Next.js plugins to this list if needed.
   withNx,
+  // sentry should be the last plugin
+  sentryConfig,
 ]
 
 module.exports = composePlugins(...plugins)(nextConfig)
