@@ -4,8 +4,8 @@
 
 import * as Sentry from '@sentry/nextjs'
 import { sentryDSN } from './sentry.config'
-import { isProd } from './src/lib/config/app.config'
-import { shouldIgnoreError } from './src/lib/shared/utils/query-errors'
+import { isProd } from './lib/config/app.config'
+import { shouldIgnoreError } from './lib/shared/utils/query-errors'
 
 Sentry.init({
   // Change this value only if you need to debug in development (we have a custom developmentSentryDSN for that)
