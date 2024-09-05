@@ -40,7 +40,7 @@ export const rpcFallbacks: Record<GqlChain, string | undefined> = {
 }
 
 const baseUrl = getBaseUrl()
-const shouldUsePrivateRpc = 'yes'
+const shouldUsePrivateRpc = !!process.env.PRIVATE_ALCHEMY_KEY
 const getPrivateRpcUrl = (chain: GqlChain) => `${baseUrl}/api/rpc/${chain}`
 const getRpcOverride = (chain: GqlChain) => {
   if (shouldUsePrivateRpc) {
