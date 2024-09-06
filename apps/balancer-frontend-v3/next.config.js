@@ -2,7 +2,6 @@
 const { composePlugins, withNx } = require('@nx/next')
 const { withSentryConfig } = require('@sentry/nextjs')
 const { sentryOptions } = require('./sentry.config')
-const path = require('path')
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
