@@ -16,7 +16,10 @@
         "name": "next"
       }
     ],
-    "types": ["node", "vitest/globals"]
+    "types": [
+      "node",
+      "vitest/globals"
+    ]
   },
   "include": [
     "**/*.ts",
@@ -26,7 +29,13 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "./vitest.config.ts",
-    "./vitest.config.integration.ts"
+    "./vitest.config.integration.ts",
+    "../../dist/apps/balancer-frontend-v3/.next/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", ".next"]
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    ".next"
+  ]
 }
