@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend-monorepo/balancer-frontend-v3/*": ["./apps/balancer-frontend-v3/*"],
+      "@frontend-monorepo/balancer-frontend-v3/*": ["apps/balancer-frontend-v3/*"],
       "@frontend-monorepo/frontend-helpers": ["libs/shared/frontend-helpers/src/index.ts"],
       "@frontend-monorepo/frontend-helpers/server": ["libs/shared/frontend-helpers/src/server.ts"]
     }
