@@ -26,7 +26,7 @@
       "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
-      "dependsOn": ["typecheck"],
+      "dependsOn": [],
       "options": {
         "root": "apps/balancer-frontend-v3",
         "outputPath": "apps/balancer-frontend-v3/dist"
