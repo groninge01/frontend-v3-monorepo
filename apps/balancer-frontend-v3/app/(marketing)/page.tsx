@@ -7,8 +7,10 @@ import { HomeHero } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/com
 import { HomeBuilders } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/HomeBuilders'
 import { HomeProtocols } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/HomeProtocols'
 import { HomeActivity } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/HomeActivity'
+import { FOO } from '@frontend-monorepo/frontend-helpers'
 
 export default function Home() {
+  console.log({ FOO })
   return (
     <ReactLenis root options={{ lerp: 0.1, duration: 1.5 }}>
       <Box className="homepage" overflowX="hidden">
