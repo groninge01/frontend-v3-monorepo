@@ -29,7 +29,7 @@
       "dependsOn": ["typecheck"],
       "options": {
         "root": "apps/balancer-frontend-v3",
-        "outputPath": "dist/apps/balancer-frontend-v3"
+        "outputPath": "apps/balancer-frontend-v3/dist"
       },
       "configurations": {
         "development": {
