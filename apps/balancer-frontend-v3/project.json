@@ -6,7 +6,7 @@
   "tags": [],
   "// targets": "to see all targets run: nx show project balancer-frontend-v3 --web",
   "targets": {
-    "dev:bal": {
+    "dev-bal": {
       "executor": "nx:run-commands",
       "options": {
         "commands": [
@@ -14,6 +14,12 @@
           "nx run balancer-frontend-v3:gen:graphql:watch"
         ],
         "parallel": true
+      }
+    },
+    "gen-graphql-prod": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx run balancer-frontend-v3:gen:graphql:prod"
       }
     },
     "typecheck": {
@@ -26,7 +32,7 @@
       "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
-      "dependsOn": [],
+      "dependsOn": ["gen-graphql-prod"],
       "options": {
         "root": "apps/balancer-frontend-v3",
         "outputPath": "apps/balancer-frontend-v3/dist"
