@@ -43,7 +43,8 @@ export class SentryError extends Error {
   ) {
     const { cause, context, name } = options
 
-    super(message, { cause })
+    // super(message, { cause }) <- TODO: check this
+    super(message)
     this.name = name || this.constructor.name
 
     this.context = context || {}

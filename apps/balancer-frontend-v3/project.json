@@ -15,6 +15,28 @@
         ],
         "parallel": true
       }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --project ./apps/balancer-frontend-v3/tsconfig.json --noEmit"
+      }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "dependsOn": ["typecheck"],
+      "options": {
+        "root": "apps/balancer-frontend-v3",
+        "outputPath": "dist/apps/balancer-frontend-v3"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/balancer-frontend-v3"
+        },
+        "production": {}
+      }
     }
   }
 }
