@@ -5,7 +5,7 @@ import {
   GqlPoolType,
   GqlPoolOrderBy,
   GqlPoolOrderDirection,
-} from '@/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import {
   parseAsArrayOf,
   parseAsInteger,

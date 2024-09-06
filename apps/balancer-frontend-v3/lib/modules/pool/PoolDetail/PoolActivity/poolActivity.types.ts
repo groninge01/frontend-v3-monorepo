@@ -1,4 +1,7 @@
-import { GqlPoolType, GqlToken } from '@/lib/shared/services/api/generated/graphql'
+import {
+  GqlPoolType,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { BaseVariant, PoolVariant } from '../../pool.types'
 
 export type PoolActivityTokens = {

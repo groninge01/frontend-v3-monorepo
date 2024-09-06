@@ -1,4 +1,4 @@
-import { bn } from '@/lib/shared/utils/numbers'
+import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import BigNumber from 'bignumber.js'
 
 /*

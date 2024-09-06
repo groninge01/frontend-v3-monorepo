@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 
-import { TokenBalancesProvider } from '@/lib/modules/tokens/TokenBalancesProvider'
+import { TokenBalancesProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenBalancesProvider'
 import ButtonGroup, {
   ButtonGroupOption,
-} from '@/lib/shared/components/btns/button-group/ButtonGroup'
-import { InputWithSlider } from '@/lib/shared/components/inputs/InputWithSlider/InputWithSlider'
-import { fNum } from '@/lib/shared/utils/numbers'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/btns/button-group/ButtonGroup'
+import { InputWithSlider } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/inputs/InputWithSlider/InputWithSlider'
+import { fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import {
   Box,
   Button,
@@ -25,15 +25,15 @@ import { RemoveLiquidityProportional } from './RemoveLiquidityProportional'
 import { RemoveLiquiditySingleToken } from './RemoveLiquiditySingleToken'
 import { usePool } from '../../../PoolProvider'
 import { usePoolRedirect } from '../../../pool.hooks'
-import { TransactionSettings } from '@/lib/modules/user/settings/TransactionSettings'
+import { TransactionSettings } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/user/settings/TransactionSettings'
 import { requiresProportionalInput } from '../../LiquidityActionHelpers'
-import { PriceImpactAccordion } from '@/lib/modules/price-impact/PriceImpactAccordion'
+import { PriceImpactAccordion } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactAccordion'
 import { PoolActionsPriceImpactDetails } from '../../PoolActionsPriceImpactDetails'
-import { usePriceImpact } from '@/lib/modules/price-impact/PriceImpactProvider'
+import { usePriceImpact } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactProvider'
 import { parseUnits } from 'viem'
-import { SimulationError } from '@/lib/shared/components/errors/SimulationError'
-import { InfoIcon } from '@/lib/shared/components/icons/InfoIcon'
-import { SafeAppAlert } from '@/lib/shared/components/alerts/SafeAppAlert'
+import { SimulationError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/errors/SimulationError'
+import { InfoIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/InfoIcon'
+import { SafeAppAlert } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/alerts/SafeAppAlert'
 
 const TABS: ButtonGroupOption[] = [
   {

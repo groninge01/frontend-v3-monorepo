@@ -1,15 +1,19 @@
 /* eslint-disable max-len */
-import { FetchPoolProps } from '@/lib/modules/pool/pool.types'
-import { ChainSlug, getPoolTypeLabel, slugToChainMap } from '@/lib/modules/pool/pool.utils'
+import { FetchPoolProps } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.types'
+import {
+  ChainSlug,
+  getPoolTypeLabel,
+  slugToChainMap,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.utils'
 import { PropsWithChildren, Suspense } from 'react'
-import { PoolDetailSkeleton } from '@/lib/modules/pool/PoolDetail/PoolDetailSkeleton'
-import { getApolloServerClient } from '@/lib/shared/services/api/apollo-server.client'
-import { GetPoolDocument } from '@/lib/shared/services/api/generated/graphql'
+import { PoolDetailSkeleton } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolDetail/PoolDetailSkeleton'
+import { getApolloServerClient } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/apollo-server.client'
+import { GetPoolDocument } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { Metadata } from 'next'
 import { Box } from '@chakra-ui/react'
-import { PoolProvider } from '@/lib/modules/pool/PoolProvider'
-import { getProjectConfig } from '@/lib/config/getProjectConfig'
-import { arrayToSentence } from '@/lib/shared/utils/strings'
+import { PoolProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolProvider'
+import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
+import { arrayToSentence } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/strings'
 
 type Props = PropsWithChildren<{
   params: Omit<FetchPoolProps, 'chain'> & { chain: ChainSlug }

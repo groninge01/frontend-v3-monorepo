@@ -1,14 +1,17 @@
 'use client'
 
-import { useUserSettings } from '@/lib/modules/user/settings/UserSettingsProvider'
-import { useUserAccount } from '@/lib/modules/web3/UserAccountProvider'
-import { defaultDebounceMs, onlyExplicitRefetch } from '@/lib/shared/utils/queries'
+import { useUserSettings } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/user/settings/UserSettingsProvider'
+import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
+import {
+  defaultDebounceMs,
+  onlyExplicitRefetch,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/queries'
 import { HumanAmount } from '@balancer/sdk'
 import { useDebounce } from 'use-debounce'
 import { useQuery } from '@tanstack/react-query'
 import { RemoveLiquidityHandler } from '../handlers/RemoveLiquidity.handler'
 import { RemoveLiquidityParams, removeLiquidityKeys } from './remove-liquidity-keys'
-import { sentryMetaForRemoveLiquidityHandler } from '@/lib/shared/utils/query-errors'
+import { sentryMetaForRemoveLiquidityHandler } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { Address } from 'viem'
 
 export type RemoveLiquiditySimulationQueryResult = ReturnType<

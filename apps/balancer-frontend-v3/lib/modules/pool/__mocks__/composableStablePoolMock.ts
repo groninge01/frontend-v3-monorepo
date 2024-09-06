@@ -1,6 +1,10 @@
 /* eslint-disable max-len */
 
-import { GqlChain, GqlPoolElement, GqlPoolType } from '@/lib/shared/services/api/generated/graphql'
+import {
+  GqlChain,
+  GqlPoolElement,
+  GqlPoolType,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 
 export const composableStablePoolMock: GqlPoolElement = {
   id: '0x156c02f3f7fef64a3a9d80ccf7085f23cce91d76000000000000000000000570',

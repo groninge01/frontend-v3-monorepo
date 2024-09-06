@@ -1,5 +1,5 @@
-import { alternativeTestUserAccount } from '@/test/anvil/anvil-setup'
-import { testHook } from '@/test/utils/custom-renderers'
+import { alternativeTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/anvil-setup'
+import { testHook } from '@frontend-monorepo/balancer-frontend-v3/test/utils/custom-renderers'
 import { waitFor } from '@testing-library/react'
 import {
   connectWithAlternativeUser,

@@ -1,4 +1,4 @@
-import { TransactionConfig } from '@/lib/modules/web3/contracts/contract.types'
+import { TransactionConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/contract.types'
 import {
   BuildRemoveLiquidityInput,
   QueryRemoveLiquidityInput,

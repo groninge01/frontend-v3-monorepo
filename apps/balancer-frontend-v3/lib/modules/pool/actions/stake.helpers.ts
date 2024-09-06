@@ -1,4 +1,4 @@
-import { bn } from '@/lib/shared/utils/numbers'
+import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { Pool } from '../PoolProvider'
 import { Address } from 'viem'
 import { HumanAmount } from '@balancer/sdk'
@@ -6,7 +6,7 @@ import { isClaimableGauge } from '../pool.helpers'
 import {
   GqlPoolStakingType,
   GqlUserStakedBalance,
-} from '@/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { getStakedBalance } from '../user-balance.helpers'
 
 // eslint-disable-next-line max-len

@@ -1,17 +1,20 @@
 'use client'
 
-import { ChainSlug, slugToChainMap } from '@/lib/modules/pool/pool.utils'
-import { SwapProvider } from '@/lib/modules/swap/SwapProvider'
-import { TokenBalancesProvider } from '@/lib/modules/tokens/TokenBalancesProvider'
-import { TokenInputsValidationProvider } from '@/lib/modules/tokens/TokenInputsValidationProvider'
-import { useTokens } from '@/lib/modules/tokens/TokensProvider'
-import { TransactionStateProvider } from '@/lib/modules/transactions/transaction-steps/TransactionStateProvider'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
+import {
+  ChainSlug,
+  slugToChainMap,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.utils'
+import { SwapProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/swap/SwapProvider'
+import { TokenBalancesProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenBalancesProvider'
+import { TokenInputsValidationProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInputsValidationProvider'
+import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
+import { TransactionStateProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionStateProvider'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { PropsWithChildren } from 'react'
-import { PriceImpactProvider } from '@/lib/modules/price-impact/PriceImpactProvider'
-import { DefaultPageContainer } from '@/lib/shared/components/containers/DefaultPageContainer'
+import { PriceImpactProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactProvider'
+import { DefaultPageContainer } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/DefaultPageContainer'
 import { getSwapPathParams } from './getSwapPathParams'
-import { RelayerSignatureProvider } from '@/lib/modules/relayer/RelayerSignatureProvider'
+import { RelayerSignatureProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/relayer/RelayerSignatureProvider'
 
 type Props = PropsWithChildren<{
   params: { slug?: string[] }

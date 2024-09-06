@@ -3,12 +3,12 @@
 
 import { Box } from '@chakra-ui/react'
 
-import { V3Hero } from '@/lib/shared/components/marketing/build/v3/V3Hero'
-import { V3About } from '@/lib/shared/components/marketing/build/v3/V3About'
-import { V3UseCases } from '@/lib/shared/components/marketing/build/v3/V3UseCases'
-import { V3Technical } from '@/lib/shared/components/marketing/build/v3/V3Technical'
-import { V3Grants } from '@/lib/shared/components/marketing/build/v3/V3Grants'
-import { V3VideoTutorial } from '@/lib/shared/components/marketing/build/v3/V3VideoTutorial'
+import { V3Hero } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/build/v3/V3Hero'
+import { V3About } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/build/v3/V3About'
+import { V3UseCases } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/build/v3/V3UseCases'
+import { V3Technical } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/build/v3/V3Technical'
+import { V3Grants } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/build/v3/V3Grants'
+import { V3VideoTutorial } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/marketing/build/v3/V3VideoTutorial'
 import { ReactLenis } from '@studio-freight/react-lenis'
 
 export default function Home() {

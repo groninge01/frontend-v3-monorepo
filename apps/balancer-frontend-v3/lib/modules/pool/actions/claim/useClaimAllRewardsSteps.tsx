@@ -1,5 +1,5 @@
-import { useApproveMinterStep } from '@/lib/modules/staking/gauge/useMinterApprovalStep'
-import { TransactionStep } from '@/lib/modules/transactions/transaction-steps/lib'
+import { useApproveMinterStep } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/staking/gauge/useMinterApprovalStep'
+import { TransactionStep } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
 import { useMemo } from 'react'
 import { ClaimAllRewardsStepParams, useClaimAllRewardsStep } from './useClaimAllRewardsStep'
 

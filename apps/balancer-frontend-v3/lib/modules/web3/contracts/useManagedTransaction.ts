@@ -1,10 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 
-import { getGqlChain } from '@/lib/config/app.config'
-import { SupportedChainId } from '@/lib/config/config.types'
-import { useNetworkConfig } from '@/lib/config/useNetworkConfig'
-import { ManagedResult, TransactionLabels } from '@/lib/modules/transactions/transaction-steps/lib'
+import { getGqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
+import { useNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/useNetworkConfig'
+import {
+  ManagedResult,
+  TransactionLabels,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
 import { Abi, Address, ContractFunctionArgs, ContractFunctionName } from 'viem'
 import { useSimulateContract, useWaitForTransactionReceipt, useWriteContract } from 'wagmi'
 import { useChainSwitch } from '../useChainSwitch'
@@ -12,7 +15,7 @@ import { AbiMap } from './AbiMap'
 import { TransactionExecution, TransactionSimulation, WriteAbiMutability } from './contract.types'
 import { useOnTransactionConfirmation } from './useOnTransactionConfirmation'
 import { useOnTransactionSubmission } from './useOnTransactionSubmission'
-import { captureWagmiExecutionError } from '@/lib/shared/utils/query-errors'
+import { captureWagmiExecutionError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { useTxHash } from '../safe.hooks'
 import { getWaitForReceiptTimeout } from './wagmi-helpers'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, BoxProps, Center, Text, Spinner, VStack } from '@chakra-ui/react'
-import { Pagination } from '@/lib/shared/components/pagination/Pagination'
+import { Pagination } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/pagination/Pagination'
 
 interface Props<T> extends BoxProps {
   items: T[]

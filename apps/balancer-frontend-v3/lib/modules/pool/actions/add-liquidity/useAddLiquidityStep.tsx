@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { ManagedSendTransactionButton } from '@/lib/modules/transactions/transaction-steps/TransactionButton'
-import { useTransactionState } from '@/lib/modules/transactions/transaction-steps/TransactionStateProvider'
+import { ManagedSendTransactionButton } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionButton'
+import { useTransactionState } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionStateProvider'
 import {
   TransactionLabels,
   TransactionStep,
-} from '@/lib/modules/transactions/transaction-steps/lib'
-import { sentryMetaForWagmiSimulation } from '@/lib/shared/utils/query-errors'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
   AddLiquidityBuildQueryParams,

@@ -32,7 +32,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import { PoolListSearch } from './PoolListSearch'
-import { getProjectConfig } from '@/lib/config/getProjectConfig'
+import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
 import { usePoolListQueryState } from './usePoolListQueryState'
 import {
   PoolFilterType,
@@ -40,19 +40,19 @@ import {
   PoolCategoryType,
   poolCategoryFilters,
 } from '../pool.types'
-import { useUserAccount } from '@/lib/modules/web3/UserAccountProvider'
+import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
 import { useEffect, useState } from 'react'
 import { Filter } from 'react-feather'
-import { useBreakpoints } from '@/lib/shared/hooks/useBreakpoints'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
+import { useBreakpoints } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBreakpoints'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
 import { useDebouncedCallback } from 'use-debounce'
-import { defaultDebounceMs } from '@/lib/shared/utils/queries'
+import { defaultDebounceMs } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/queries'
 import { motion, AnimatePresence } from 'framer-motion'
-import { staggeredFadeInUp } from '@/lib/shared/utils/animations'
-import { getChainShortName } from '@/lib/config/app.config'
+import { staggeredFadeInUp } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/animations'
+import { getChainShortName } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { usePoolList } from './PoolListProvider'
-import { MultiSelect } from '@/lib/shared/components/inputs/MultiSelect'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
+import { MultiSelect } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/inputs/MultiSelect'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import Image from 'next/image'
 
 const SLIDER_MAX_VALUE = 10000000

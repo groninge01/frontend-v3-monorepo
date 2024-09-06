@@ -4,7 +4,10 @@ import PoolMetaBadges from './PoolMetaBadges'
 
 import { usePool } from '../../PoolProvider'
 import { shouldBlockAddLiquidity } from '../../pool.helpers'
-import { AnalyticsEvent, trackEvent } from '@/lib/shared/services/fathom/Fathom'
+import {
+  AnalyticsEvent,
+  trackEvent,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/fathom/Fathom'
 import { PoolCategories } from '../../categories/PoolCategories'
 import { PoolBreadcrumbs } from './PoolBreadcrumbs'
 

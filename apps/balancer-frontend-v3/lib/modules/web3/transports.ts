@@ -2,8 +2,8 @@
 
 import { Chain } from '@rainbow-me/rainbowkit'
 import { fallback, http } from 'wagmi'
-import { getGqlChain } from '@/lib/config/app.config'
-import { SupportedChainId } from '@/lib/config/config.types'
+import { getGqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
 
 import { chains, rpcFallbacks, rpcOverrides } from './ChainConfig'
 export function getTransports(chain: Chain) {

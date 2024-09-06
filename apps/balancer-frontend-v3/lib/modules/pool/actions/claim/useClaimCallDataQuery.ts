@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { Address } from 'viem'
-import { GaugeService } from '@/lib/shared/services/staking/gauge.service'
+import { GaugeService } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/staking/gauge.service'
 
 export function useClaimCallDataQuery(
   gaugeAddresses: Address[],

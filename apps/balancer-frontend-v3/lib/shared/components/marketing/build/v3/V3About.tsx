@@ -8,7 +8,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from '@chakra-ui/react'
-import Section from '@/lib/shared/components/layout/Section'
+import Section from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/layout/Section'
 
 export function V3About() {
   return (

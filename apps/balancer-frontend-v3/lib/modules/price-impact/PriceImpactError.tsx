@@ -1,4 +1,4 @@
-import { GenericError } from '@/lib/shared/components/errors/GenericError'
+import { GenericError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/errors/GenericError'
 import { isUnhandledAddPriceImpactError } from './price-impact.utils'
 import { UseQueryResult } from '@tanstack/react-query'
 

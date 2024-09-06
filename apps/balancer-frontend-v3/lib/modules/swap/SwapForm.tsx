@@ -1,7 +1,10 @@
 'use client'
 
-import { TokenInput } from '@/lib/modules/tokens/TokenInput/TokenInput'
-import { GqlChain, GqlToken } from '@/lib/shared/services/api/generated/graphql'
+import { TokenInput } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInput/TokenInput'
+import {
+  GqlChain,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { HumanAmount } from '@balancer/sdk'
 import {
   Card,
@@ -30,13 +33,13 @@ import { SwapRate } from './SwapRate'
 import { SwapDetails } from './SwapDetails'
 import { capitalize } from 'lodash'
 import { motion, easeOut } from 'framer-motion'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
-import { ErrorAlert } from '@/lib/shared/components/errors/ErrorAlert'
-import { useIsMounted } from '@/lib/shared/hooks/useIsMounted'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
+import { ErrorAlert } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/errors/ErrorAlert'
+import { useIsMounted } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useIsMounted'
 import { parseSwapError } from './swap.helpers'
 import { useUserAccount } from '../web3/UserAccountProvider'
 import { ConnectWallet } from '../web3/ConnectWallet'
-import { SafeAppAlert } from '@/lib/shared/components/alerts/SafeAppAlert'
+import { SafeAppAlert } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/alerts/SafeAppAlert'
 
 export function SwapForm() {
   const {

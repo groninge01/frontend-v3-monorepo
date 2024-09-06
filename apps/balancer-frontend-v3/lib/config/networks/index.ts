@@ -1,4 +1,4 @@
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import arbitrum from './arbitrum'
 import avalanche from './avalanche'
 import gnosis from './gnosis'

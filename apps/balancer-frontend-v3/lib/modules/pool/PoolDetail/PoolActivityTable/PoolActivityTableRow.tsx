@@ -11,24 +11,24 @@ import {
   Badge,
   BadgeProps,
 } from '@chakra-ui/react'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 import { formatDistanceToNow, secondsToMilliseconds } from 'date-fns'
-import { abbreviateAddress } from '@/lib/shared/utils/addresses'
+import { abbreviateAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { useEnsAvatar, useEnsName } from 'wagmi'
-import { getChainId } from '@/lib/config/app.config'
+import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { createAvatar } from '@dicebear/core'
 import { identicon } from '@dicebear/collection'
 import { ArrowUpRight } from 'react-feather'
 import {
   getBlockExplorerAddressUrl,
   getBlockExplorerTxUrl,
-} from '@/lib/shared/hooks/useBlockExplorer'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBlockExplorer'
 import { PoolActivityEl, PoolActivityTokens } from '../PoolActivity/poolActivity.types'
-import { TokenIcon } from '@/lib/modules/tokens/TokenIcon'
-import { fNum } from '@/lib/shared/utils/numbers'
+import { TokenIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenIcon'
+import { fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import React from 'react'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { usePool } from '../../PoolProvider'
 
 interface Props extends GridProps {

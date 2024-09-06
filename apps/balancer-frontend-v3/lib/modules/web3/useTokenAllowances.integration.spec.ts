@@ -1,6 +1,10 @@
-import { vaultV2Address, wETHAddress, wjAuraAddress } from '@/lib/debug-helpers'
-import { testHook } from '@/test/utils/custom-renderers'
-import { defaultTestUserAccount } from '@/test/anvil/anvil-setup'
+import {
+  vaultV2Address,
+  wETHAddress,
+  wjAuraAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
+import { testHook } from '@frontend-monorepo/balancer-frontend-v3/test/utils/custom-renderers'
+import { defaultTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/anvil-setup'
 import { act, waitFor } from '@testing-library/react'
 import { Address } from 'viem'
 import { useTokenAllowances } from './useTokenAllowances'

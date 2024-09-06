@@ -1,13 +1,18 @@
 /* eslint-disable max-len */
-import networkConfig from '@/lib/config/networks/mainnet'
-import { daiAddress, usdcAddress, usdtAddress, wETHAddress } from '@/lib/debug-helpers'
-import { mainnetTestPublicClient } from '@/test/utils/wagmi/wagmi-test-clients'
+import networkConfig from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks/mainnet'
+import {
+  daiAddress,
+  usdcAddress,
+  usdtAddress,
+  wETHAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
+import { mainnetTestPublicClient } from '@frontend-monorepo/balancer-frontend-v3/test/utils/wagmi/wagmi-test-clients'
 import { nestedPoolMock } from '../../../__mocks__/nestedPoolMock'
 import { Pool } from '../../../PoolProvider'
 import { NestedAddLiquidityHandler } from './NestedAddLiquidity.handler'
 import { selectAddLiquidityHandler } from './selectAddLiquidityHandler'
-import { defaultTestUserAccount } from '@/test/anvil/anvil-setup'
-import { HumanTokenAmountWithAddress } from '@/lib/modules/tokens/token.types'
+import { defaultTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/anvil-setup'
+import { HumanTokenAmountWithAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.types'
 
 function selectNestedHandler(pool: Pool) {
   return selectAddLiquidityHandler(pool) as NestedAddLiquidityHandler

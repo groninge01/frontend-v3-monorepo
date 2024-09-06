@@ -1,5 +1,8 @@
-import { getNativeAssetAddress, getWrappedNativeAssetAddress } from '@/lib/config/app.config'
-import { SupportedChainId } from '@/lib/config/config.types'
+import {
+  getNativeAssetAddress,
+  getWrappedNativeAssetAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
 import { Address, checksumAddress, isAddress } from 'viem'
 import { GqlChain } from '../services/api/generated/graphql'
 

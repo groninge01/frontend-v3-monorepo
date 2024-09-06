@@ -12,7 +12,11 @@
     "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@frontend-monorepo/balancer-frontend-v3/*": ["./apps/balancer-frontend-v3/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

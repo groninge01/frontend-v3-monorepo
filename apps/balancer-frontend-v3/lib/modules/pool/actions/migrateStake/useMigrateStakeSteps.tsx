@@ -1,4 +1,4 @@
-import { TransactionStep } from '@/lib/modules/transactions/transaction-steps/lib'
+import { TransactionStep } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
 import { Pool } from '../../PoolProvider'
 import { useEffect, useMemo, useState } from 'react'
 import { useUnstakeFromNonPreferentialGaugeStep } from './useUnstakeFromNonPreferentialGaugeStep'

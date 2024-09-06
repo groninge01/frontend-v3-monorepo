@@ -1,6 +1,6 @@
-import { useUserSettings } from '@/lib/modules/user/settings/UserSettingsProvider'
-import { useUserAccount } from '@/lib/modules/web3/UserAccountProvider'
-import { onlyExplicitRefetch } from '@/lib/shared/utils/queries'
+import { useUserSettings } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/user/settings/UserSettingsProvider'
+import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
+import { onlyExplicitRefetch } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/queries'
 import { useQuery } from '@tanstack/react-query'
 import { ensureLastQueryResponse } from '../../pool/actions/LiquidityActionHelpers'
 import { SwapHandler } from '../handlers/Swap.handler'
@@ -8,7 +8,10 @@ import { SimulateSwapResponse, SwapState } from '../swap.types'
 import { swapQueryKeys } from './swapQueryKeys'
 import { SwapSimulationQueryResult } from './useSimulateSwapQuery'
 import { useRelayerSignature } from '../../relayer/RelayerSignatureProvider'
-import { SwapBuildCallExtras, sentryMetaForSwapHandler } from '@/lib/shared/utils/query-errors'
+import {
+  SwapBuildCallExtras,
+  sentryMetaForSwapHandler,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 
 export type BuildSwapQueryResponse = ReturnType<typeof useBuildSwapQuery>
 

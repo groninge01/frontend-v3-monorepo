@@ -1,4 +1,7 @@
-import { getChainId, getNetworkConfig } from '@/lib/config/app.config'
+import {
+  getChainId,
+  getNetworkConfig,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { SwapHandler } from './Swap.handler'
 import { ApolloClient } from '@apollo/client'
 import { TransactionConfig } from '../../web3/contracts/contract.types'

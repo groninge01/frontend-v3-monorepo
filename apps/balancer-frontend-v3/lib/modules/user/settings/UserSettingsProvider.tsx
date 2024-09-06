@@ -1,12 +1,12 @@
 'use client'
 
-import { useMandatoryContext } from '@/lib/shared/utils/contexts'
-import { SupportedCurrency } from '@/lib/shared/utils/currencies'
+import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
+import { SupportedCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/currencies'
 import { PropsWithChildren, createContext } from 'react'
-import { bn } from '@/lib/shared/utils/numbers'
+import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { useLocalStorage } from 'usehooks-ts'
 import { LS_KEYS } from '../../local-storage/local-storage.constants'
-import { useIsMounted } from '@/lib/shared/hooks/useIsMounted'
+import { useIsMounted } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useIsMounted'
 
 export type YesNo = 'yes' | 'no'
 

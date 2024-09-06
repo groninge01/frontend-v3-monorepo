@@ -1,5 +1,8 @@
-import { captureError, ensureError } from '@/lib/shared/utils/errors'
-import { hours } from '@/lib/shared/utils/time'
+import {
+  captureError,
+  ensureError,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/errors'
+import { hours } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/time'
 import { NextResponse } from 'next/server'
 
 type Params = {

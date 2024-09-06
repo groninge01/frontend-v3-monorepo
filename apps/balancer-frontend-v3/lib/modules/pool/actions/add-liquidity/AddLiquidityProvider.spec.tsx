@@ -1,11 +1,17 @@
-import { balAddress, daiAddress, usdcAddress, usdtAddress, wETHAddress } from '@/lib/debug-helpers'
-import { GqlPoolElement } from '@/lib/shared/services/api/generated/graphql'
-import { aBalWethPoolElementMock } from '@/test/msw/builders/gqlPoolElement.builders'
+import {
+  balAddress,
+  daiAddress,
+  usdcAddress,
+  usdtAddress,
+  wETHAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
+import { GqlPoolElement } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { aBalWethPoolElementMock } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlPoolElement.builders'
 import {
   DefaultAddLiquidityTestProvider,
   buildDefaultPoolTestProvider,
   testHook,
-} from '@/test/utils/custom-renderers'
+} from '@frontend-monorepo/balancer-frontend-v3/test/utils/custom-renderers'
 import { PropsWithChildren } from 'react'
 import { _useAddLiquidity } from './AddLiquidityProvider'
 import { nestedPoolMock } from '../../__mocks__/nestedPoolMock'

@@ -10,17 +10,20 @@ import {
   GqlChain,
   GqlPoolTokenDetail,
   GqlToken,
-} from '@/lib/shared/services/api/generated/graphql'
-import { isSameAddress } from '@/lib/shared/utils/addresses'
-import { useMandatoryContext } from '@/lib/shared/utils/contexts'
-import { bn, Numberish } from '@/lib/shared/utils/numbers'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
+import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
+import { bn, Numberish } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr'
 import { Dictionary, zipObject } from 'lodash'
 import { createContext, PropsWithChildren, useCallback } from 'react'
 import { Address } from 'viem'
-import { useSkipInitialQuery } from '@/lib/shared/hooks/useSkipInitialQuery'
-import { getNativeAssetAddress, getWrappedNativeAssetAddress } from '@/lib/config/app.config'
-import { mins } from '@/lib/shared/utils/time'
+import { useSkipInitialQuery } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useSkipInitialQuery'
+import {
+  getNativeAssetAddress,
+  getWrappedNativeAssetAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { mins } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/time'
 
 export type UseTokensResult = ReturnType<typeof _useTokens>
 export const TokensContext = createContext<UseTokensResult | null>(null)

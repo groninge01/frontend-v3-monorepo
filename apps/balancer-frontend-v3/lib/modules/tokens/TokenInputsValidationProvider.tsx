@@ -1,7 +1,7 @@
 'use client'
 
-import { GqlToken } from '@/lib/shared/services/api/generated/graphql'
-import { useMandatoryContext } from '@/lib/shared/utils/contexts'
+import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { PropsWithChildren, createContext, useState } from 'react'
 import { Address } from 'viem'
 

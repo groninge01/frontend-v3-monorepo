@@ -1,17 +1,20 @@
-import { balAddress, wETHAddress } from '@/lib/debug-helpers'
-import { aTokenPriceMock } from '@/lib/modules/tokens/__mocks__/token.builders'
-import { GqlPoolElement } from '@/lib/shared/services/api/generated/graphql'
-import { aBalWethPoolElementMock } from '@/test/msw/builders/gqlPoolElement.builders'
-import { aUserPoolBalance } from '@/test/msw/builders/gqlUserBalance.builders'
-import { mockTokenPricesList } from '@/test/msw/handlers/Tokens.handlers'
-import { buildDefaultPoolTestProvider, testHook } from '@/test/utils/custom-renderers'
+import { balAddress, wETHAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
+import { aTokenPriceMock } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/__mocks__/token.builders'
+import { GqlPoolElement } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { aBalWethPoolElementMock } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlPoolElement.builders'
+import { aUserPoolBalance } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlUserBalance.builders'
+import { mockTokenPricesList } from '@frontend-monorepo/balancer-frontend-v3/test/msw/handlers/Tokens.handlers'
+import {
+  buildDefaultPoolTestProvider,
+  testHook,
+} from '@frontend-monorepo/balancer-frontend-v3/test/utils/custom-renderers'
 import { waitFor } from '@testing-library/react'
 import { act } from 'react-dom/test-utils'
 import { mock } from 'vitest-mock-extended'
 import { aTokenAmountMock } from '../__mocks__/liquidity.builders'
 import { RemoveLiquiditySimulationQueryResult } from './queries/useRemoveLiquiditySimulationQuery'
 import { _useRemoveLiquidity } from './RemoveLiquidityProvider'
-import { aSuccessfulQueryResultMock } from '@/test/utils/react-query'
+import { aSuccessfulQueryResultMock } from '@frontend-monorepo/balancer-frontend-v3/test/utils/react-query'
 
 const balTokenOutUnits = '1'
 const wEthTokenOutUnits = '0.5'

@@ -2,8 +2,8 @@ import { formatUnits } from 'viem'
 import { BPT_DECIMALS } from '../../../pool.constants'
 import { usePool } from '../../../PoolProvider'
 import { useAddLiquidity } from '../AddLiquidityProvider'
-import { bn, fNum } from '@/lib/shared/utils/numbers'
-import { BptRow } from '@/lib/modules/tokens/TokenRow/BptRow'
+import { bn, fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
+import { BptRow } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenRow/BptRow'
 import { requiresProportionalInput } from '../../LiquidityActionHelpers'
 
 export function ReceiptBptOut({

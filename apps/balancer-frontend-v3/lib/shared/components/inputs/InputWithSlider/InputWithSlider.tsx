@@ -1,7 +1,7 @@
 'use client'
 
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
-import { blockInvalidNumberInput } from '@/lib/shared/utils/numbers'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
+import { blockInvalidNumberInput } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import {
   Box,
   BoxProps,

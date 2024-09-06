@@ -1,4 +1,4 @@
-import { TransactionBundle } from '@/lib/modules/web3/contracts/contract.types'
+import { TransactionBundle } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/contract.types'
 import React from 'react'
 import { LockActionType } from '../../vebal/lock/lock.helpers'
 

@@ -13,16 +13,19 @@ import {
 } from '@chakra-ui/react'
 import { usePool } from '../PoolProvider'
 import { useEffect, useLayoutEffect, useMemo, useState } from 'react'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
-import { GetPoolEventsQuery, GqlChain } from '@/lib/shared/services/api/generated/graphql'
-import { TokenIcon } from '@/lib/modules/tokens/TokenIcon'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
+import {
+  GetPoolEventsQuery,
+  GqlChain,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { TokenIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenIcon'
 import { formatDistanceToNow, secondsToMilliseconds } from 'date-fns'
-import { useBlockExplorer } from '@/lib/shared/hooks/useBlockExplorer'
+import { useBlockExplorer } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBlockExplorer'
 import { ArrowUpRight } from 'react-feather'
 import { PoolEventItem } from '../usePoolEvents'
 import { calcTotalStakedBalance, getUserTotalBalance } from '../user-balance.helpers'
-import { fNum, bn } from '@/lib/shared/utils/numbers'
-import { useVebalBoost } from '@/lib/modules/vebal/useVebalBoost'
+import { fNum, bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
+import { useVebalBoost } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/vebal/useVebalBoost'
 import { isEmpty } from 'lodash'
 import { isVebalPool } from '../pool.helpers'
 

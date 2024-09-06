@@ -1,16 +1,19 @@
 'use client'
 
-import { useTokens } from '@/lib/modules/tokens/TokensProvider'
-import { TokenInput } from '@/lib/modules/tokens/TokenInput/TokenInput'
+import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
+import { TokenInput } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInput/TokenInput'
 import { Button, Card, Heading, Text, VStack, useDisclosure } from '@chakra-ui/react'
-import { GqlChain, GqlToken } from '@/lib/shared/services/api/generated/graphql'
+import {
+  GqlChain,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { useState } from 'react'
-import { TokenSelectModal } from '@/lib/modules/tokens/TokenSelectModal/TokenSelectModal'
-import { TokenBalancesProvider } from '@/lib/modules/tokens/TokenBalancesProvider'
-import { ConnectWallet } from '@/lib/modules/web3/ConnectWallet'
-import { daiAddress } from '@/lib/debug-helpers'
-import { TokenInputsValidationProvider } from '@/lib/modules/tokens/TokenInputsValidationProvider'
-import { PriceImpactProvider } from '@/lib/modules/price-impact/PriceImpactProvider'
+import { TokenSelectModal } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenSelectModal/TokenSelectModal'
+import { TokenBalancesProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenBalancesProvider'
+import { ConnectWallet } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ConnectWallet'
+import { daiAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
+import { TokenInputsValidationProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInputsValidationProvider'
+import { PriceImpactProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactProvider'
 
 export default function TokenInputPage() {
   const [currentValue, setCurrentValue] = useState('')

@@ -5,8 +5,8 @@ import {
   captureSentryError,
   sentryMetaForWagmiSimulation,
   shouldIgnoreError,
-} from '@/lib/shared/utils/query-errors'
-import { defaultTestUserAccount } from '@/test/anvil/anvil-setup'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
+import { defaultTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/anvil-setup'
 import * as Sentry from '@sentry/nextjs'
 import { waitFor } from '@testing-library/react'
 import sentryTestkit from 'sentry-testkit'
@@ -15,11 +15,14 @@ import { recoveryPoolMock } from '../../modules/pool/__mocks__/recoveryPoolMock'
 import { Extras } from '@sentry/types'
 // eslint-disable-next-line max-len
 import { RecoveryRemoveLiquidityHandler } from '../../modules/pool/actions/remove-liquidity/handlers/RecoveryRemoveLiquidity.handler'
-import { UnbalancedAddLiquidityHandler } from '@/lib/modules/pool/actions/add-liquidity/handlers/UnbalancedAddLiquidity.handler'
-import { aWjAuraWethPoolElementMock } from '@/test/msw/builders/gqlPoolElement.builders'
-import { AddLiquidityParams } from '@/lib/modules/pool/actions/add-liquidity/queries/add-liquidity-keys'
-import { wETHAddress, wjAuraAddress } from '@/lib/debug-helpers'
-import { RemoveLiquidityParams } from '@/lib/modules/pool/actions/remove-liquidity/queries/remove-liquidity-keys'
+import { UnbalancedAddLiquidityHandler } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/actions/add-liquidity/handlers/UnbalancedAddLiquidity.handler'
+import { aWjAuraWethPoolElementMock } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlPoolElement.builders'
+import { AddLiquidityParams } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/actions/add-liquidity/queries/add-liquidity-keys'
+import {
+  wETHAddress,
+  wjAuraAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
+import { RemoveLiquidityParams } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/actions/remove-liquidity/queries/remove-liquidity-keys'
 
 const { testkit, sentryTransport } = sentryTestkit()
 const test_DSN = 'https://testDns@sentry.io/000001'

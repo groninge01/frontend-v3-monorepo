@@ -1,9 +1,9 @@
 'use client'
 
-import { TokenBalancesProvider } from '@/lib/modules/tokens/TokenBalancesProvider'
-import { useTokens } from '@/lib/modules/tokens/TokensProvider'
-import { DefaultPageContainer } from '@/lib/shared/components/containers/DefaultPageContainer'
-import mainnetNetworkConfig from '@/lib/config/networks/mainnet'
+import { TokenBalancesProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenBalancesProvider'
+import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
+import { DefaultPageContainer } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/DefaultPageContainer'
+import mainnetNetworkConfig from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks/mainnet'
 
 type PropsWithChildren = {
   children: React.ReactNode

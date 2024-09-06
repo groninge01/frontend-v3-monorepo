@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { ManagedSendTransactionButton } from '@/lib/modules/transactions/transaction-steps/TransactionButton'
+import { ManagedSendTransactionButton } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionButton'
 import {
   TransactionLabels,
   TransactionStep,
-} from '@/lib/modules/transactions/transaction-steps/lib'
-import { GqlToken } from '@/lib/shared/services/api/generated/graphql'
-import { sentryMetaForWagmiSimulation } from '@/lib/shared/utils/query-errors'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { VStack } from '@chakra-ui/react'
 import { capitalize } from 'lodash'
 import { useEffect, useMemo, useState } from 'react'

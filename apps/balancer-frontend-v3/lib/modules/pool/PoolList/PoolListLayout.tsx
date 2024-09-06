@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 import { FilterTags, PoolListFilters, useFilterTagsVisible } from './PoolListFilters'
 import { PoolListTable } from './PoolListTable/PoolListTable'
 import { usePoolList } from './PoolListProvider'
-import { fNum } from '@/lib/shared/utils/numbers'
+import { fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { ErrorBoundary } from 'react-error-boundary'
-import { BoundaryError } from '@/lib/shared/components/errors/ErrorBoundary'
+import { BoundaryError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/errors/ErrorBoundary'
 
 export function PoolListLayout() {
   const { pools, loading, count } = usePoolList()

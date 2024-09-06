@@ -1,13 +1,16 @@
 'use client'
 
-import { defaultDebounceMs, onlyExplicitRefetch } from '@/lib/shared/utils/queries'
+import {
+  defaultDebounceMs,
+  onlyExplicitRefetch,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/queries'
 import { useDebounce } from 'use-debounce'
 import { useQuery } from '@tanstack/react-query'
 import { SwapHandler } from '../handlers/Swap.handler'
 import { swapQueryKeys } from './swapQueryKeys'
 import { SimulateSwapInputs, SimulateSwapResponse } from '../swap.types'
-import { sentryMetaForSwapHandler } from '@/lib/shared/utils/query-errors'
-import { isZero } from '@/lib/shared/utils/numbers'
+import { sentryMetaForSwapHandler } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
+import { isZero } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 
 export type SwapSimulationQueryResult = ReturnType<typeof useSimulateSwapQuery>
 

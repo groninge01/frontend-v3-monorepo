@@ -1,8 +1,11 @@
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { Address } from 'viem'
 import { isNativeAsset, isWrappedNativeAsset } from '../tokens/token.helpers'
-import { getNetworkConfig } from '@/lib/config/app.config'
-import { isSameAddress, sameAddresses } from '@/lib/shared/utils/addresses'
+import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import {
+  isSameAddress,
+  sameAddresses,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { LidoWrapHandler } from './handlers/LidoWrap.handler'
 import { SwapHandler } from './handlers/Swap.handler'
 import { OWrapType, SupportedWrapHandler, WrapType } from './swap.types'

@@ -1,4 +1,4 @@
-import { testWagmiConfig } from '@/test/anvil/testWagmiConfig'
+import { testWagmiConfig } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/testWagmiConfig'
 import { publicActions, testActions, walletActions } from 'viem'
 import { mainnet, polygon, sepolia } from 'viem/chains'
 

@@ -2,12 +2,12 @@ import {
   defaultGetTokenPricesQueryMock,
   defaultTokenListMock,
   defaultTokenPriceListMock,
-} from '@/lib/modules/tokens/__mocks__/token.builders'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/__mocks__/token.builders'
 import {
   GetTokenPricesDocument,
   GetTokenPricesQuery,
   GetTokensDocument,
-} from '@/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { graphql } from 'msw'
 import { getQueryName, mockGQL } from '../utils'
 import { GQLResponse } from './msw-helpers'

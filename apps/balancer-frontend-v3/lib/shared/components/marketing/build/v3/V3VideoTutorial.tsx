@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react'
-import Section from '@/lib/shared/components/layout/Section'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
+import Section from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/layout/Section'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 
 export function V3VideoTutorial() {
   return (

@@ -2,10 +2,10 @@
 import { gyroPoolMock } from '../../../__mocks__/gyroPoolMock'
 import { Pool } from '../../../PoolProvider'
 import { addLiquidityKeys } from './add-liquidity-keys'
-import { defaultTestUserAccount } from '@/test/anvil/anvil-setup'
-import { aWjAuraWethPoolElementMock } from '@/test/msw/builders/gqlPoolElement.builders'
+import { defaultTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/anvil-setup'
+import { aWjAuraWethPoolElementMock } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlPoolElement.builders'
 import { UnbalancedAddLiquidityHandler } from '../handlers/UnbalancedAddLiquidity.handler'
-import { HumanTokenAmountWithAddress } from '@/lib/modules/tokens/token.types'
+import { HumanTokenAmountWithAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.types'
 
 function testGenerateLiquidityKeys(pool: Pool) {
   const humanAmountsIn: HumanTokenAmountWithAddress[] = [

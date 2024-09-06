@@ -3,8 +3,8 @@ import {
   TransactionState,
   TransactionStep,
   getTransactionState,
-} from '@/lib/modules/transactions/transaction-steps/lib'
-import { ColorMode } from '@/lib/shared/services/chakra/useThemeColorMode'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import { ColorMode } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/chakra/useThemeColorMode'
 
 type StepStatus = 'active' | 'complete' | 'incomplete'
 

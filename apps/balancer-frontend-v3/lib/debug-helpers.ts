@@ -1,5 +1,5 @@
-import mainnetNetworkConfig from '@/lib/config/networks/mainnet'
-import sepoliaNetworkConfig from '@/lib/config/networks/sepolia'
+import mainnetNetworkConfig from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks/mainnet'
+import sepoliaNetworkConfig from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks/sepolia'
 import { Address } from 'viem'
 
 /*

@@ -1,4 +1,4 @@
-import { testHook } from '@/test/utils/custom-renderers'
+import { testHook } from '@frontend-monorepo/balancer-frontend-v3/test/utils/custom-renderers'
 import { usePoolListQueryState } from './usePoolListQueryState'
 
 function updateUrlQueryString(queryString: `?${string}`) {

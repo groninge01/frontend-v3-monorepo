@@ -1,16 +1,19 @@
 'use client'
 
-import { useUserSettings } from '@/lib/modules/user/settings/UserSettingsProvider'
-import { useUserAccount } from '@/lib/modules/web3/UserAccountProvider'
-import { defaultDebounceMs, onlyExplicitRefetch } from '@/lib/shared/utils/queries'
+import { useUserSettings } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/user/settings/UserSettingsProvider'
+import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
+import {
+  defaultDebounceMs,
+  onlyExplicitRefetch,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/queries'
 import { useDebounce } from 'use-debounce'
 import { areEmptyAmounts } from '../../LiquidityActionHelpers'
 import { AddLiquidityHandler } from '../handlers/AddLiquidity.handler'
 import { AddLiquidityParams, addLiquidityKeys } from './add-liquidity-keys'
 import { useQuery } from '@tanstack/react-query'
 import { usePool } from '../../../PoolProvider'
-import { sentryMetaForAddLiquidityHandler } from '@/lib/shared/utils/query-errors'
-import { HumanTokenAmountWithAddress } from '@/lib/modules/tokens/token.types'
+import { sentryMetaForAddLiquidityHandler } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
+import { HumanTokenAmountWithAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.types'
 
 export type AddLiquiditySimulationQueryResult = ReturnType<typeof useAddLiquiditySimulationQuery>
 

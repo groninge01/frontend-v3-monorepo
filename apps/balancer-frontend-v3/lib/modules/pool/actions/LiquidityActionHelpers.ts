@@ -1,10 +1,18 @@
-import { getChainId, getNativeAsset, getNetworkConfig } from '@/lib/config/app.config'
-import { TokenAmountToApprove } from '@/lib/modules/tokens/approvals/approval-rules'
-import { nullAddress } from '@/lib/modules/web3/contracts/wagmi-helpers'
-import { GqlChain, GqlPoolType, GqlToken } from '@/lib/shared/services/api/generated/graphql'
-import { isSameAddress } from '@/lib/shared/utils/addresses'
-import { SentryError } from '@/lib/shared/utils/errors'
-import { bn, isZero } from '@/lib/shared/utils/numbers'
+import {
+  getChainId,
+  getNativeAsset,
+  getNetworkConfig,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { TokenAmountToApprove } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/approvals/approval-rules'
+import { nullAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/wagmi-helpers'
+import {
+  GqlChain,
+  GqlPoolType,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
+import { SentryError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/errors'
+import { bn, isZero } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import {
   HumanAmount,
   InputAmount,

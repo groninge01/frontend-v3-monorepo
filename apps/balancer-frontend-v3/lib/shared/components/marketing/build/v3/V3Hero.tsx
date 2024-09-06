@@ -1,5 +1,5 @@
 import { Button, Heading, Text, Flex, Box } from '@chakra-ui/react'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 import NextLink from 'next/link'
 
 export function V3Hero() {

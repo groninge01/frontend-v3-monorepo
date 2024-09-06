@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import { Button, Heading, Text, Flex, Box } from '@chakra-ui/react'
-import Section from '@/lib/shared/components/layout/Section'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
+import Section from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/layout/Section'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import NextLink from 'next/link'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'

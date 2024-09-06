@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { getDefaultRpcUrl } from '@/lib/modules/web3/ChainConfig'
-import { TransactionConfig } from '@/lib/modules/web3/contracts/contract.types'
+import { getDefaultRpcUrl } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ChainConfig'
+import { TransactionConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/contract.types'
 import {
   AddLiquidity,
   AddLiquidityKind,
@@ -14,7 +14,7 @@ import { Pool } from '../../../PoolProvider'
 import { LiquidityActionHelpers } from '../../LiquidityActionHelpers'
 import { SdkBuildAddLiquidityInput, SdkQueryAddLiquidityOutput } from '../add-liquidity.types'
 import { AddLiquidityHandler } from './AddLiquidity.handler'
-import { HumanTokenAmountWithAddress } from '@/lib/modules/tokens/token.types'
+import { HumanTokenAmountWithAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.types'
 
 /**
  * ProportionalAddLiquidityHandler is a handler that implements the

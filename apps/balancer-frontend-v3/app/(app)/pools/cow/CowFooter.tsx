@@ -1,9 +1,9 @@
 'use client'
 
-import { getVariantConfig } from '@/lib/modules/pool/pool.hooks'
-import { PartnerVariant } from '@/lib/modules/pool/pool.types'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
-import { Picture } from '@/lib/shared/components/other/Picture'
+import { getVariantConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.hooks'
+import { PartnerVariant } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.types'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
+import { Picture } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/other/Picture'
 import { Box, Button, Center, Text, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
 

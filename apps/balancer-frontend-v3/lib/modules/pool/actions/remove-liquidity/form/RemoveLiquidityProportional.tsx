@@ -1,13 +1,19 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 
-import TokenRow from '@/lib/modules/tokens/TokenRow/TokenRow'
-import { GqlPoolType, GqlToken } from '@/lib/shared/services/api/generated/graphql'
+import TokenRow from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenRow/TokenRow'
+import {
+  GqlPoolType,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { Card, Text, VStack, useDisclosure } from '@chakra-ui/react'
 import { Address } from 'viem'
 import { useRemoveLiquidity } from '../RemoveLiquidityProvider'
-import { isNativeAsset, isNativeOrWrappedNative } from '@/lib/modules/tokens/token.helpers'
-import { NativeAssetSelectModal } from '@/lib/modules/tokens/NativeAssetSelectModal'
+import {
+  isNativeAsset,
+  isNativeOrWrappedNative,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.helpers'
+import { NativeAssetSelectModal } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/NativeAssetSelectModal'
 import { shouldShowNativeWrappedSelector } from '../../LiquidityActionHelpers'
 
 type Props = { tokens: (GqlToken | undefined)[]; poolType: GqlPoolType }

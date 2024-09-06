@@ -1,5 +1,5 @@
-import { PortfolioProvider } from '@/lib/modules/portfolio/PortfolioProvider'
-import { DefaultPageContainer } from '@/lib/shared/components/containers/DefaultPageContainer'
+import { PortfolioProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/portfolio/PortfolioProvider'
+import { DefaultPageContainer } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/DefaultPageContainer'
 
 type Props = {
   children: React.ReactNode

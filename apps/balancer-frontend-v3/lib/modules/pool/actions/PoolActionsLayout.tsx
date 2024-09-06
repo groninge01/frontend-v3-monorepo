@@ -1,6 +1,6 @@
 'use client'
 
-import { Navbar } from '@/lib/shared/components/navs/Navbar'
+import { Navbar } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/navs/Navbar'
 import { Box, VStack, Card, useColorModeValue } from '@chakra-ui/react'
 import { PropsWithChildren } from 'react'
 import { PoolActionsNav } from './PoolActionsNav'

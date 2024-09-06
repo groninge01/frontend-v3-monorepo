@@ -1,9 +1,9 @@
-import { getChainId } from '@/lib/config/app.config'
+import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import {
   GqlPoolStakingType,
   GqlUserStakedBalance,
-} from '@/lib/shared/services/api/generated/graphql'
-import { bn } from '@/lib/shared/utils/numbers'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { compact, groupBy } from 'lodash'
 import { Address, formatUnits } from 'viem'
 import { useReadContracts } from 'wagmi'

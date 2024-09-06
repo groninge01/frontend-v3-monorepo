@@ -4,15 +4,18 @@ import { Card, Divider, HStack, Heading, Skeleton, Stack, Text, VStack } from '@
 import React from 'react'
 import { usePool } from '../../PoolProvider'
 import { Address } from 'viem'
-import { GqlChain, GqlPoolTokenDetail } from '@/lib/shared/services/api/generated/graphql'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
-import { fNum } from '@/lib/shared/utils/numbers'
-import { NoisyCard } from '@/lib/shared/components/containers/NoisyCard'
-import { PoolZenGarden } from '@/lib/shared/components/zen/ZenGarden'
+import {
+  GqlChain,
+  GqlPoolTokenDetail,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
+import { fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
+import { NoisyCard } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/NoisyCard'
+import { PoolZenGarden } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/zen/ZenGarden'
 import { PoolWeightChart } from '../PoolWeightCharts/PoolWeightChart'
-import { useBreakpoints } from '@/lib/shared/hooks/useBreakpoints'
-import TokenRow from '@/lib/modules/tokens/TokenRow/TokenRow'
-import { useTokens } from '@/lib/modules/tokens/TokensProvider'
+import { useBreakpoints } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBreakpoints'
+import TokenRow from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenRow/TokenRow'
+import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
 import { getPoolDisplayTokens } from '../../pool.utils'
 
 type CardContentProps = {

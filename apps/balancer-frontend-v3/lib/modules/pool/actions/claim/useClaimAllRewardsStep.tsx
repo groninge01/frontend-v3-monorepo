@@ -1,20 +1,23 @@
-import { getChainId } from '@/lib/config/app.config'
-import networkConfigs from '@/lib/config/networks'
-import { selectStakingService } from '@/lib/modules/staking/selectStakingService'
-import { ManagedTransactionButton } from '@/lib/modules/transactions/transaction-steps/TransactionButton'
-import { useTransactionState } from '@/lib/modules/transactions/transaction-steps/TransactionStateProvider'
+import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import networkConfigs from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks'
+import { selectStakingService } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/staking/selectStakingService'
+import { ManagedTransactionButton } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionButton'
+import { useTransactionState } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionStateProvider'
 import {
   TransactionLabels,
   TransactionStep,
-} from '@/lib/modules/transactions/transaction-steps/lib'
-import { GqlChain, GqlPoolStakingType } from '@/lib/shared/services/api/generated/graphql'
-import { sentryMetaForWagmiSimulation } from '@/lib/shared/utils/query-errors'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import {
+  GqlChain,
+  GqlPoolStakingType,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { useMemo, useState } from 'react'
 import { ManagedTransactionInput } from '../../../web3/contracts/useManagedTransaction'
 import { useUserAccount } from '../../../web3/UserAccountProvider'
 import { useClaimCallDataQuery } from './useClaimCallDataQuery'
-import { BalTokenRewardsResult } from '@/lib/modules/portfolio/PortfolioClaim/useBalRewards'
-import { ClaimableBalancesResult } from '@/lib/modules/portfolio/PortfolioClaim/useClaimableBalances'
+import { BalTokenRewardsResult } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/portfolio/PortfolioClaim/useBalRewards'
+import { ClaimableBalancesResult } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/portfolio/PortfolioClaim/useClaimableBalances'
 import { allClaimableGaugeAddressesFor } from '../../pool.helpers'
 import { ClaimablePool } from './ClaimProvider'
 

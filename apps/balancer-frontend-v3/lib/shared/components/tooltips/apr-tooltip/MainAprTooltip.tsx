@@ -11,13 +11,16 @@ import {
 } from '@chakra-ui/react'
 import BaseAprTooltip, { BaseAprTooltipProps } from './BaseAprTooltip'
 import { Info } from 'react-feather'
-import { getTotalAprLabel } from '@/lib/modules/pool/pool.utils'
+import { getTotalAprLabel } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.utils'
 import StarsIcon from '../../icons/StarsIcon'
-import { PoolListItem } from '@/lib/modules/pool/pool.types'
-import { FeaturedPool, Pool } from '@/lib/modules/pool/PoolProvider'
-import { isLBP } from '@/lib/modules/pool/pool.helpers'
-import { getProjectConfig } from '@/lib/config/getProjectConfig'
-import { GqlPoolAprItemType } from '@/lib/shared/services/api/generated/graphql'
+import { PoolListItem } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.types'
+import {
+  FeaturedPool,
+  Pool,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolProvider'
+import { isLBP } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.helpers'
+import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
+import { GqlPoolAprItemType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 
 interface Props
   extends Omit<

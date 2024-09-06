@@ -16,8 +16,8 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react'
-import Section from '@/lib/shared/components/layout/Section'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
+import Section from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/layout/Section'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 import { Picture } from '../../../other/Picture'
 import { ArrowUpRight } from 'react-feather'
 import NextLink from 'next/link'

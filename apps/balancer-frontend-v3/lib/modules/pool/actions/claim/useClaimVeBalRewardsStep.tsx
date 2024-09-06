@@ -1,14 +1,14 @@
-import networkConfig from '@/lib/config/networks/mainnet'
-import { claimableVeBalRewardsTokens } from '@/lib/modules/portfolio/PortfolioClaim/useProtocolRewards'
-import { ManagedTransactionButton } from '@/lib/modules/transactions/transaction-steps/TransactionButton'
-import { useTransactionState } from '@/lib/modules/transactions/transaction-steps/TransactionStateProvider'
+import networkConfig from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks/mainnet'
+import { claimableVeBalRewardsTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/portfolio/PortfolioClaim/useProtocolRewards'
+import { ManagedTransactionButton } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionButton'
+import { useTransactionState } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionStateProvider'
 import {
   TransactionLabels,
   TransactionStep,
-} from '@/lib/modules/transactions/transaction-steps/lib'
-import { ManagedTransactionInput } from '@/lib/modules/web3/contracts/useManagedTransaction'
-import { useUserAccount } from '@/lib/modules/web3/UserAccountProvider'
-import { sentryMetaForWagmiSimulation } from '@/lib/shared/utils/query-errors'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import { ManagedTransactionInput } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/useManagedTransaction'
+import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
+import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { useMemo } from 'react'
 import { Address } from 'viem'
 

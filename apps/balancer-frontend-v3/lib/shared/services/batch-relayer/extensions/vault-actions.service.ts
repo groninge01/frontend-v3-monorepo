@@ -1,6 +1,6 @@
 import { encodeFunctionData } from 'viem'
 import { EncodeExitPoolInput } from '../relayer-types'
-import { balancerV2BatchRelayerLibraryAbi } from '@/lib/modules/web3/contracts/abi/generated'
+import { balancerV2BatchRelayerLibraryAbi } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/abi/generated'
 
 export class VaultActionsService {
   public encodeExitPool(params: EncodeExitPoolInput): string {

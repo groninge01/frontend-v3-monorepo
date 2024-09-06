@@ -1,8 +1,11 @@
 import { useEffect } from 'react'
 import { Address } from 'viem'
 import { useRecentTransactions } from '../../transactions/RecentTransactionsProvider'
-import { TransactionLabels } from '@/lib/modules/transactions/transaction-steps/lib'
-import { AnalyticsEvent, trackEvent } from '@/lib/shared/services/fathom/Fathom'
+import { TransactionLabels } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import {
+  AnalyticsEvent,
+  trackEvent,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/fathom/Fathom'
 
 type updateTrackedTransactionRequest = {
   labels: TransactionLabels

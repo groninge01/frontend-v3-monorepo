@@ -1,4 +1,4 @@
-import networkConfig from '@/lib/config/networks/mainnet'
+import networkConfig from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks/mainnet'
 
 export function getNetworkTestUtils() {
   return { getEthAddress: getETHAddress }

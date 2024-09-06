@@ -1,11 +1,11 @@
 'use client'
 
-import { captureError } from '@/lib/shared/utils/errors'
+import { captureError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/errors'
 import {
   SentryMetadata,
   captureSentryError,
   shouldIgnoreError,
-} from '@/lib/shared/utils/query-errors'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { QueryCache, QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactNode } from 'react'
 

@@ -3,8 +3,8 @@
 
 import { useSwitchChain } from 'wagmi'
 import { Button } from '@chakra-ui/react'
-import { getChainShortName } from '@/lib/config/app.config'
-import { SupportedChainId } from '@/lib/config/config.types'
+import { getChainShortName } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
 import { useUserAccount } from './UserAccountProvider'
 
 export function useChainSwitch(chainId: SupportedChainId) {

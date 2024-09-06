@@ -1,4 +1,4 @@
-import { config } from '@/lib/config/app.config'
+import { config } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { ApolloLink, HttpLink } from '@apollo/client'
 import {
   NextSSRApolloClient,

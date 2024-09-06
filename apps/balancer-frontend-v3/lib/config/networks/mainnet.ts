@@ -1,9 +1,9 @@
-import { PoolIssue } from '@/lib/modules/pool/alerts/pool-issues/PoolIssue.type'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
-import { convertHexToLowerCase } from '@/lib/shared/utils/objects'
+import { PoolIssue } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/alerts/pool-issues/PoolIssue.type'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { convertHexToLowerCase } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/objects'
 import { NetworkConfig } from '../config.types'
 import { CSP_ISSUE_POOL_IDS } from '../../shared/data/csp-issue'
-import { SupportedWrapHandler } from '@/lib/modules/swap/swap.types'
+import { SupportedWrapHandler } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/swap/swap.types'
 
 const networkConfig = {
   chainId: 1,

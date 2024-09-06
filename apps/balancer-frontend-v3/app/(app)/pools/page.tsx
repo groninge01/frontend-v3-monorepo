@@ -1,6 +1,6 @@
-import { PoolList } from '@/lib/modules/pool/PoolList/PoolList'
-import { DefaultPageContainer } from '@/lib/shared/components/containers/DefaultPageContainer'
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
+import { PoolList } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolList/PoolList'
+import { DefaultPageContainer } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/DefaultPageContainer'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 
 import { Box, Skeleton } from '@chakra-ui/react'
 import { Suspense } from 'react'

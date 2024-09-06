@@ -1,4 +1,4 @@
-import { useMandatoryContext } from '@/lib/shared/utils/contexts'
+import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { createContext, PropsWithChildren, useMemo, useState } from 'react'
 
 export enum PoolActivityView {

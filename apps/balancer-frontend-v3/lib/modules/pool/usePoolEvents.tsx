@@ -4,7 +4,7 @@ import {
   GqlPoolEventType,
   GqlPoolEventsDataRange,
   GetPoolEventsQuery,
-} from '@/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { FetchPolicy } from '@apollo/client'
 import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr'
 

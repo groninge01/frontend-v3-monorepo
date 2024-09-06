@@ -1,4 +1,7 @@
-import { GetPoolsDocument, GetTokensDocument } from '@/lib/shared/services/api/generated/graphql'
+import {
+  GetPoolsDocument,
+  GetTokensDocument,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { getQueryName } from './utils'
 
 describe('getQueryName', () => {

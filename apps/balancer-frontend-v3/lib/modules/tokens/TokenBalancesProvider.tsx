@@ -5,12 +5,16 @@ import { useBalance, useReadContracts } from 'wagmi'
 import { erc20Abi } from 'viem'
 import { TokenAmount, TokenBase } from './token.types'
 import { Address, formatUnits } from 'viem'
-import { isLoadingQueries, isRefetchingQueries, refetchQueries } from '@/lib/shared/utils/queries'
-import { isSameAddress } from '@/lib/shared/utils/addresses'
+import {
+  isLoadingQueries,
+  isRefetchingQueries,
+  refetchQueries,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/queries'
+import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { PropsWithChildren, createContext, useState } from 'react'
-import { useMandatoryContext } from '@/lib/shared/utils/contexts'
-import { getNetworkConfig } from '@/lib/config/app.config'
-import { GqlToken } from '@/lib/shared/services/api/generated/graphql'
+import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
+import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { exclNativeAssetFilter, nativeAssetFilter } from './token.helpers'
 
 const BALANCE_CACHE_TIME_MS = 30_000

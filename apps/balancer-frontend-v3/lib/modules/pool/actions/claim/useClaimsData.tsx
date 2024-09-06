@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 
-import { useBalTokenRewards } from '@/lib/modules/portfolio/PortfolioClaim/useBalRewards'
-import { useClaimableBalances } from '@/lib/modules/portfolio/PortfolioClaim/useClaimableBalances'
-import { safeSum } from '@/lib/shared/utils/numbers'
+import { useBalTokenRewards } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/portfolio/PortfolioClaim/useBalRewards'
+import { useClaimableBalances } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/portfolio/PortfolioClaim/useClaimableBalances'
+import { safeSum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { useMemo } from 'react'
 import { ClaimablePool } from './ClaimProvider'
 

@@ -1,4 +1,4 @@
-import { GaugeService } from '@/lib/shared/services/staking/gauge.service'
+import { GaugeService } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/staking/gauge.service'
 import { Address, Hex } from 'viem'
 
 type Params = {

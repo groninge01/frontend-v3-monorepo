@@ -17,9 +17,9 @@ import {
   Tooltip,
 } from '@chakra-ui/react'
 
-import FadeInOnView from '@/lib/shared/components/containers/FadeInOnView'
+import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 import { X, Check } from 'react-feather'
-import { InfoIcon } from '@/lib/shared/components/icons/InfoIcon'
+import { InfoIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/InfoIcon'
 
 export function V3FeatureComparison() {
   return (

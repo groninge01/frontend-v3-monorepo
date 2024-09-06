@@ -16,20 +16,27 @@ import {
   forwardRef,
   useTheme,
 } from '@chakra-ui/react'
-import { GqlChain, GqlToken } from '@/lib/shared/services/api/generated/graphql'
+import {
+  GqlChain,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { useTokens } from '../TokensProvider'
 import { useTokenBalances } from '../TokenBalancesProvider'
 import { useTokenInput } from './useTokenInput'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
-import { blockInvalidNumberInput, bn, fNum } from '@/lib/shared/utils/numbers'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
+import {
+  blockInvalidNumberInput,
+  bn,
+  fNum,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { TokenIcon } from '../TokenIcon'
 import { useTokenInputsValidation } from '../TokenInputsValidationProvider'
 import { ChevronDown } from 'react-feather'
-import { WalletIcon } from '@/lib/shared/components/icons/WalletIcon'
-import { usePriceImpact } from '@/lib/modules/price-impact/PriceImpactProvider'
+import { WalletIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/WalletIcon'
+import { usePriceImpact } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactProvider'
 import { useEffect, useState } from 'react'
-import { useIsMounted } from '@/lib/shared/hooks/useIsMounted'
-import { isNativeAsset } from '@/lib/shared/utils/addresses'
+import { useIsMounted } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useIsMounted'
+import { isNativeAsset } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 
 type TokenInputSelectorProps = {
   token: GqlToken | undefined

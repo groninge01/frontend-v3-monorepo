@@ -2,10 +2,13 @@ import {
   getNativeAssetAddress,
   getNetworkConfig,
   getWrappedNativeAssetAddress,
-} from '@/lib/config/app.config'
-import { SupportedChainId } from '@/lib/config/config.types'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
-import { includesAddress, isSameAddress } from '@/lib/shared/utils/addresses'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import {
+  includesAddress,
+  isSameAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { Address } from 'viem'
 import { HumanTokenAmountWithAddress, TokenBase } from './token.types'
 import { InputAmount } from '@balancer/sdk'

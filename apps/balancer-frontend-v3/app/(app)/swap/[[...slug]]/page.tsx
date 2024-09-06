@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 
-import { getProjectConfig } from '@/lib/config/getProjectConfig'
-import { SwapForm } from '@/lib/modules/swap/SwapForm'
+import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
+import { SwapForm } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/swap/SwapForm'
 import { Metadata } from 'next'
 
 const { projectName } = getProjectConfig()

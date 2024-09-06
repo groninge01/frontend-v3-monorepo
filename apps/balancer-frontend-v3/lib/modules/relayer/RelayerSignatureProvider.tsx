@@ -1,6 +1,6 @@
 'use client'
 
-import { useMandatoryContext } from '@/lib/shared/utils/contexts'
+import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { PropsWithChildren, createContext, useState } from 'react'
 
 import { Address } from 'viem'

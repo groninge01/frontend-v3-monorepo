@@ -7,17 +7,21 @@ import {
   GqlChain,
   GqlPoolTokenDisplay,
   GqlToken,
-} from '@/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { ReactNode, useEffect, useState } from 'react'
 import { TokenIcon } from '../TokenIcon'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
-import { Numberish, fNum, isZero } from '@/lib/shared/utils/numbers'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
+import {
+  Numberish,
+  fNum,
+  isZero,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { Pool } from '../../pool/PoolProvider'
 import { bptUsdValue } from '../../pool/pool.helpers'
 import { TokenInfoPopover } from '../TokenInfoPopover'
 import { ChevronDown } from 'react-feather'
-import { BullseyeIcon } from '@/lib/shared/components/icons/BullseyeIcon'
-import { isSameAddress } from '@/lib/shared/utils/addresses'
+import { BullseyeIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/BullseyeIcon'
+import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 
 type DataProps = {
   address: Address

@@ -2,10 +2,10 @@
 import {
   GqlPoolUserBalance,
   GqlUserStakedBalance,
-} from '@/lib/shared/services/api/generated/graphql'
-import { isSameAddress } from '@/lib/shared/utils/addresses'
-import { bn, safeSum } from '@/lib/shared/utils/numbers'
-import { captureNonFatalError } from '@/lib/shared/utils/query-errors'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
+import { bn, safeSum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
+import { captureNonFatalError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { HumanAmount } from '@balancer/sdk'
 import BigNumber from 'bignumber.js'
 import { useEffect } from 'react'

@@ -1,5 +1,5 @@
-import { getDefaultRpcUrl } from '@/lib/modules/web3/ChainConfig'
-import { TransactionConfig } from '@/lib/modules/web3/contracts/contract.types'
+import { getDefaultRpcUrl } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ChainConfig'
+import { TransactionConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/contract.types'
 import {
   HumanAmount,
   InputAmount,
@@ -20,7 +20,7 @@ import {
   QueryRemoveLiquidityInput,
 } from '../remove-liquidity.types'
 import { RemoveLiquidityHandler } from './RemoveLiquidity.handler'
-import { SentryError } from '@/lib/shared/utils/errors'
+import { SentryError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/errors'
 
 export class SingleTokenRemoveLiquidityHandler implements RemoveLiquidityHandler {
   helpers: LiquidityActionHelpers

@@ -3,7 +3,7 @@
 import { VStack } from '@chakra-ui/react'
 import { usePool } from '../PoolProvider'
 import { usePoolAlerts } from './usePoolAlerts'
-import { BalAlert } from '@/lib/shared/components/alerts/BalAlert'
+import { BalAlert } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/alerts/BalAlert'
 
 export function PoolAlerts() {
   const { pool } = usePool()

@@ -20,9 +20,9 @@ import {
   SortingState,
   useReactTable,
 } from '@tanstack/react-table'
-import { SortingIcon } from '@/lib/shared/components/icons/SortingIcon'
-import { Pagination } from '@/lib/shared/components/pagination/Pagination'
-import { getPoolPath } from '@/lib/modules/pool/pool.utils'
+import { SortingIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/SortingIcon'
+import { Pagination } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/pagination/Pagination'
+import { getPoolPath } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.utils'
 import Link from 'next/link'
 
 export type DataTableProps<Data extends object> = {

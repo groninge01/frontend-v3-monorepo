@@ -1,4 +1,7 @@
-import { Protocol, protocolIconPaths } from '@/lib/modules/protocols/useProtocols'
+import {
+  Protocol,
+  protocolIconPaths,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/protocols/useProtocols'
 import Image, { ImageProps } from 'next/image'
 
 type Props = Omit<ImageProps, 'src' | 'alt'> & {

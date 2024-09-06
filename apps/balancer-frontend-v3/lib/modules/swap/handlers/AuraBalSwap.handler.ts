@@ -1,6 +1,12 @@
-import { getChainId, getWrappedNativeAssetAddress } from '@/lib/config/app.config'
+import {
+  getChainId,
+  getWrappedNativeAssetAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { SwapHandler } from './Swap.handler'
-import { GqlSorSwapType, GqlToken } from '@/lib/shared/services/api/generated/graphql'
+import {
+  GqlSorSwapType,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { AuraBalSwap, HumanAmount, Slippage, SwapKind, Token, TokenAmount } from '@balancer/sdk'
 import { formatUnits } from 'viem'
 import { TransactionConfig } from '../../web3/contracts/contract.types'
@@ -9,9 +15,12 @@ import {
   AuraBalSimulateSwapResponse,
   SimulateSwapInputs,
 } from '../swap.types'
-import { getDefaultRpcUrl } from '@/lib/modules/web3/ChainConfig'
-import { isNativeAsset, isSameAddress } from '@/lib/shared/utils/addresses'
-import { bn } from '@/lib/shared/utils/numbers'
+import { getDefaultRpcUrl } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ChainConfig'
+import {
+  isNativeAsset,
+  isSameAddress,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
+import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 
 export class AuraBalSwapHandler implements SwapHandler {
   constructor(public tokens: GqlToken[]) {}

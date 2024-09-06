@@ -6,7 +6,7 @@ import { useRef } from 'react'
 import { StakeModal } from './StakeModal'
 import { StakePreview } from './StakePreview'
 import { useModalWithPoolRedirect } from '../../useModalWithPoolRedirect'
-import { SafeAppAlert } from '@/lib/shared/components/alerts/SafeAppAlert'
+import { SafeAppAlert } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/alerts/SafeAppAlert'
 
 export function StakeForm() {
   const { isDisabled, disabledReason, isLoading, stakeTxHash, pool } = useStake()

@@ -1,6 +1,6 @@
-import { GetAppGlobalPollingDataQuery } from '@/lib/shared/services/api/generated/graphql'
-import { fakeTokenBySymbol } from '@/test/data/all-gql-tokens.fake'
-import { aGqlTokenPriceMock } from '@/test/msw/builders/gqlTokenPrice.builders'
+import { GetAppGlobalPollingDataQuery } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { fakeTokenBySymbol } from '@frontend-monorepo/balancer-frontend-v3/test/data/all-gql-tokens.fake'
+import { aGqlTokenPriceMock } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlTokenPrice.builders'
 
 export function anAppGlobalData(options?: Partial<GetAppGlobalPollingDataQuery>) {
   const defaultAppGlobalData: GetAppGlobalPollingDataQuery = {

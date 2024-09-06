@@ -4,12 +4,12 @@ import {
   poolId,
   wETHAddress,
   wjAuraAddress,
-} from '@/lib/debug-helpers'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
 import {
   aTokenExpandedMock,
   someGqlTokenMocks,
   someTokenExpandedMock,
-} from '@/lib/modules/tokens/__mocks__/token.builders'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/__mocks__/token.builders'
 import {
   GqlChain,
   GqlPoolElement,
@@ -18,7 +18,7 @@ import {
   GqlPoolTokenExpanded,
   GqlPoolType,
   GqlPoolWeighted,
-} from '@/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { DeepPartial } from '@apollo/client/utilities'
 import { mock } from 'vitest-mock-extended'
 import { aGqlStakingMock } from './gqlStaking.builders'

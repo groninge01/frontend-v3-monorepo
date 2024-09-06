@@ -4,7 +4,7 @@ import { ContractFunctionParameters } from 'viem'
 import { multicall } from 'wagmi/actions'
 import { useCallback } from 'react'
 import { useConfig } from 'wagmi'
-import { SupportedChainId } from '@/lib/config/config.types'
+import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
 
 export type ChainContractConfig = ContractFunctionParameters & {
   chainId: SupportedChainId

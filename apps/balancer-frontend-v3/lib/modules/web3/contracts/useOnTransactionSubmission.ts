@@ -1,9 +1,12 @@
 import { useEffect } from 'react'
 import { Address } from 'viem'
 import { useRecentTransactions } from '../../transactions/RecentTransactionsProvider'
-import { TransactionLabels } from '@/lib/modules/transactions/transaction-steps/lib'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
-import { AnalyticsEvent, trackEvent } from '@/lib/shared/services/fathom/Fathom'
+import { TransactionLabels } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import {
+  AnalyticsEvent,
+  trackEvent,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/fathom/Fathom'
 
 type NewTrackedTransactionRequest = {
   labels: TransactionLabels

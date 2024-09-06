@@ -1,14 +1,14 @@
 import {
   TransactionLabels,
   TransactionStep,
-} from '@/lib/modules/transactions/transaction-steps/lib'
-import { ManagedTransactionInput } from '@/lib/modules/web3/contracts/useManagedTransaction'
-import { getNetworkConfig } from '@/lib/config/app.config'
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import { ManagedTransactionInput } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/useManagedTransaction'
+import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { useHasMinterApproval } from './useHasMinterApproval'
 import { useMemo } from 'react'
-import { useUserAccount } from '@/lib/modules/web3/UserAccountProvider'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
-import { sentryMetaForWagmiSimulation } from '@/lib/shared/utils/query-errors'
+import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { ManagedTransactionButton } from '../../transactions/transaction-steps/TransactionButton'
 
 const approveMinterStepId = 'approve-minter'

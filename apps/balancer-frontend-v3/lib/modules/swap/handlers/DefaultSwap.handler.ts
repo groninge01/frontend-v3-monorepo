@@ -1,12 +1,15 @@
-import { getChainId } from '@/lib/config/app.config'
+import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { SwapHandler } from './Swap.handler'
-import { GetSorSwapsDocument, GqlSorSwapType } from '@/lib/shared/services/api/generated/graphql'
+import {
+  GetSorSwapsDocument,
+  GqlSorSwapType,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { ApolloClient } from '@apollo/client'
 import { Path, Slippage, Swap, SwapKind, TokenAmount } from '@balancer/sdk'
 import { formatUnits } from 'viem'
 import { TransactionConfig } from '../../web3/contracts/contract.types'
 import { SdkBuildSwapInputs, SdkSimulateSwapResponse, SimulateSwapInputs } from '../swap.types'
-import { getDefaultRpcUrl } from '@/lib/modules/web3/ChainConfig'
+import { getDefaultRpcUrl } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ChainConfig'
 
 export class DefaultSwapHandler implements SwapHandler {
   constructor(public apolloClient: ApolloClient<object>) {}

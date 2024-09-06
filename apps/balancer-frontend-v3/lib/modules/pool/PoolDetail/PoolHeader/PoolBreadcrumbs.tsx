@@ -1,7 +1,7 @@
 import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Button } from '@chakra-ui/react'
 import { usePool } from '../../PoolProvider'
 import { ChevronRight } from 'react-feather'
-import { BalancerLogo } from '@/lib/shared/components/imgs/BalancerLogo'
+import { BalancerLogo } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/imgs/BalancerLogo'
 import { isCowAmmPool } from '../../pool.helpers'
 
 export function PoolBreadcrumbs() {

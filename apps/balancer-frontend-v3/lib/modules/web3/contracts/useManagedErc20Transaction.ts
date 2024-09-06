@@ -1,12 +1,15 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 
-import { getGqlChain } from '@/lib/config/app.config'
-import { SupportedChainId } from '@/lib/config/config.types'
-import { useNetworkConfig } from '@/lib/config/useNetworkConfig'
-import { ManagedResult, TransactionLabels } from '@/lib/modules/transactions/transaction-steps/lib'
-import { isSameAddress } from '@/lib/shared/utils/addresses'
-import { captureWagmiExecutionError } from '@/lib/shared/utils/query-errors'
+import { getGqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
+import { useNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/useNetworkConfig'
+import {
+  ManagedResult,
+  TransactionLabels,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
+import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
+import { captureWagmiExecutionError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { useEffect, useState } from 'react'
 import { Address, ContractFunctionArgs, ContractFunctionName, erc20Abi } from 'viem'
 import { useSimulateContract, useWaitForTransactionReceipt, useWriteContract } from 'wagmi'

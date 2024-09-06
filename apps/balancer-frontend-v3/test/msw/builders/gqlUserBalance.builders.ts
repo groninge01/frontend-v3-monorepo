@@ -1,4 +1,4 @@
-import { GqlPoolUserBalance } from '@/lib/shared/services/api/generated/graphql'
+import { GqlPoolUserBalance } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 
 export function aUserPoolBalance(...options: Partial<GqlPoolUserBalance>[]): GqlPoolUserBalance {
   const defaultBalance: GqlPoolUserBalance = {

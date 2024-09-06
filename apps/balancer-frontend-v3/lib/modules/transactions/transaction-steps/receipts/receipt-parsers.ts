@@ -1,7 +1,13 @@
-import { getNativeAssetAddress, getNetworkConfig } from '@/lib/config/app.config'
-import { BPT_DECIMALS } from '@/lib/modules/pool/pool.constants'
-import { GqlChain, GqlToken } from '@/lib/shared/services/api/generated/graphql'
-import { bn } from '@/lib/shared/utils/numbers'
+import {
+  getNativeAssetAddress,
+  getNetworkConfig,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { BPT_DECIMALS } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.constants'
+import {
+  GqlChain,
+  GqlToken,
+} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { HumanAmount } from '@balancer/sdk'
 import { Address, Log, erc20Abi, formatUnits, parseAbiItem, parseEventLogs } from 'viem'
 import { HumanTokenAmountWithAddress } from '../../../tokens/token.types'

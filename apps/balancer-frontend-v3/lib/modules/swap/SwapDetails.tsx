@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { NumberText } from '@/lib/shared/components/typography/NumberText'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
-import { bn, fNum } from '@/lib/shared/utils/numbers'
+import { NumberText } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/typography/NumberText'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
+import { bn, fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import {
   HStack,
   VStack,
@@ -13,14 +13,14 @@ import {
   UseDisclosureProps,
 } from '@chakra-ui/react'
 import { useSwap } from './SwapProvider'
-import { GqlSorSwapType } from '@/lib/shared/services/api/generated/graphql'
+import { GqlSorSwapType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 import { useUserSettings } from '../user/settings/UserSettingsProvider'
-import { usePriceImpact } from '@/lib/modules/price-impact/PriceImpactProvider'
+import { usePriceImpact } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactProvider'
 import { SdkSimulateSwapResponse } from './swap.types'
 import { DefaultSwapHandler } from './handlers/DefaultSwap.handler'
 import { useTokens } from '../tokens/TokensProvider'
 import { NativeWrapHandler } from './handlers/NativeWrap.handler'
-import { InfoIcon } from '@/lib/shared/components/icons/InfoIcon'
+import { InfoIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/InfoIcon'
 import pluralize from 'pluralize'
 import { SwapRoutesModal } from './modal/SwapRoutesModal'
 

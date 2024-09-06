@@ -1,10 +1,10 @@
 import { Card, HStack, PopoverArrow, PopoverContent, Text, VStack } from '@chakra-ui/react'
 import BaseAprTooltip, { BaseAprTooltipProps } from './BaseAprTooltip'
-import { useCurrency } from '@/lib/shared/hooks/useCurrency'
+import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
 import { useCallback } from 'react'
-import { bn } from '@/lib/shared/utils/numbers'
+import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import BigNumber from 'bignumber.js'
-import { Pool } from '@/lib/modules/pool/PoolProvider'
+import { Pool } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolProvider'
 import { SparklesIcon } from './MainAprTooltip'
 
 interface Props

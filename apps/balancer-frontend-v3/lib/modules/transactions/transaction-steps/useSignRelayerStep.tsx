@@ -1,15 +1,15 @@
 'use client'
 
-import { useSignRelayerApproval } from '@/lib/modules/relayer/signRelayerApproval.hooks'
-import { ConnectWallet } from '@/lib/modules/web3/ConnectWallet'
-import { useUserAccount } from '@/lib/modules/web3/UserAccountProvider'
+import { useSignRelayerApproval } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/relayer/signRelayerApproval.hooks'
+import { ConnectWallet } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ConnectWallet'
+import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
 import { Alert, Button, VStack } from '@chakra-ui/react'
 import { TransactionStep } from './lib'
 import { SignRelayerState } from '../../relayer/RelayerSignatureProvider'
 import { useMemo } from 'react'
 import { useChainSwitch } from '../../web3/useChainSwitch'
-import { getChainId } from '@/lib/config/app.config'
-import { GqlChain } from '@/lib/shared/services/api/generated/graphql'
+import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
+import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
 
 export const signRelayerStepTitle = 'Sign relayer'
 

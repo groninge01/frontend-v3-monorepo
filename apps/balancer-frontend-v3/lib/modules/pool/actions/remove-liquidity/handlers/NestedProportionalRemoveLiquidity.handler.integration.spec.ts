@@ -1,14 +1,14 @@
-import networkConfig from '@/lib/config/networks/mainnet'
-import { wETHAddress } from '@/lib/debug-helpers'
-import { emptyAddress } from '@/lib/modules/web3/contracts/wagmi-helpers'
-import { defaultTestUserAccount } from '@/test/anvil/anvil-setup'
+import networkConfig from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks/mainnet'
+import { wETHAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
+import { emptyAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/contracts/wagmi-helpers'
+import { defaultTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/anvil-setup'
 import { nestedPoolMock } from '../../../__mocks__/nestedPoolMock'
 import { Pool } from '../../../PoolProvider'
 import { QueryRemoveLiquidityInput, RemoveLiquidityType } from '../remove-liquidity.types'
 import { NestedProportionalRemoveLiquidityHandler } from './NestedProportionalRemoveLiquidity.handler'
 import { selectRemoveLiquidityHandler } from './selectRemoveLiquidityHandler'
-import { mainnetTestPublicClient } from '@/test/utils/wagmi/wagmi-test-clients'
-import { connectWithDefaultUser } from '@/test/utils/wagmi/wagmi-connections'
+import { mainnetTestPublicClient } from '@frontend-monorepo/balancer-frontend-v3/test/utils/wagmi/wagmi-test-clients'
+import { connectWithDefaultUser } from '@frontend-monorepo/balancer-frontend-v3/test/utils/wagmi/wagmi-connections'
 
 function selectNestedProportionalHandler(pool: Pool): NestedProportionalRemoveLiquidityHandler {
   return selectRemoveLiquidityHandler(
