@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev:bal": "nx dev:bal balancer-frontend-v3"
+  },
   "dependencies": {
     "@apollo/client": "3.8.0-rc.1",
     "@balancer/sdk": "^0.23.0",
