@@ -35,7 +35,7 @@
       "dependsOn": ["gen-graphql-prod"],
       "options": {
         "root": "apps/balancer-frontend-v3",
-        "outputPath": "dist/apps/balancer-frontend-v3"
+        "outputPath": "apps/balancer-frontend-v3/.next"
       },
       "configurations": {
         "development": {
