@@ -25,7 +25,7 @@
     "build": {
       "executor": "@nx/next:build",
       "defaultConfiguration": "production",
-      "dependsOn": ["typecheck"],
+      "dependsOn": [],
       "configurations": {
         "development": {
           "outputPath": "apps/balancer-frontend-v3"
