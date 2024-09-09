@@ -10,14 +10,6 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "npx graphql-codegen --config libs/shared/services/api/src/lib/codegen.ts"
-      },
-      "configurations": {
-        "development": {
-          "envFile": ".env.local"
-        },
-        "production": {
-          "envFile": ".env"
-        }
       }
     }
   }
