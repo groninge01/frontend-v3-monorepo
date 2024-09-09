@@ -1,6 +1,6 @@
 import { ProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
 import { PartnerVariant } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.types'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { isProd } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 
 export const ProjectConfigBalancer: ProjectConfig = {

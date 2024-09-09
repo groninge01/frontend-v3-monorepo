@@ -1,10 +1,7 @@
 'use client'
 
 import { TokenInput } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInput/TokenInput'
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { HumanAmount } from '@balancer/sdk'
 import {
   Card,

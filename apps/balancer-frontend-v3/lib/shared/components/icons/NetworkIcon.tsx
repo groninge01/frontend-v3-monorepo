@@ -1,5 +1,5 @@
 import { Circle, SquareProps } from '@chakra-ui/react'
-import { GqlChain } from '../../services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'

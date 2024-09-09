@@ -1,6 +1,6 @@
 import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { useNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/useNetworkConfig'
-import { GqlChain } from '../services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 
 export function getBlockExplorerName(chain?: GqlChain) {
   const _chain = chain || GqlChain.Mainnet

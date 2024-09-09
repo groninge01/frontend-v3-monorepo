@@ -4,7 +4,7 @@ import {
   TransactionLabels,
   TransactionStep,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { VStack } from '@chakra-ui/react'
 import { capitalize } from 'lodash'

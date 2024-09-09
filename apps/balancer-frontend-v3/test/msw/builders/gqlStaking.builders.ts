@@ -3,7 +3,7 @@ import {
   GqlPoolStaking,
   GqlPoolStakingGaugeStatus,
   GqlPoolStakingType,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 
 export const defaultTestGaugeAddress = '0x2d42910d826e5500579d121596e98a6eb33c0a1b'
 

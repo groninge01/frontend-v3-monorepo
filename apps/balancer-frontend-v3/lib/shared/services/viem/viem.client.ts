@@ -1,5 +1,5 @@
 import { createPublicClient } from 'viem'
-import { GqlChain } from '../api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import {
   chains,

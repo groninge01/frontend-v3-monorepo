@@ -4,11 +4,7 @@
 import * as echarts from 'echarts/core'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { format } from 'date-fns'
-import {
-  GqlChain,
-  GqlPoolEventType,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlPoolEventType, GqlToken } from '@frontend-monorepo/api'
 import EChartsReactCore from 'echarts-for-react/lib/core'
 import { ColorMode, useTheme as useChakraTheme } from '@chakra-ui/react'
 import { useTheme as useNextTheme } from 'next-themes'

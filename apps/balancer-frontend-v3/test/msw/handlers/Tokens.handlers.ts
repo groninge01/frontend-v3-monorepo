@@ -7,7 +7,7 @@ import {
   GetTokenPricesDocument,
   GetTokenPricesQuery,
   GetTokensDocument,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import { graphql } from 'msw'
 import { getQueryName, mockGQL } from '../utils'
 import { GQLResponse } from './msw-helpers'

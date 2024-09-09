@@ -7,7 +7,7 @@ import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/co
 import { useHasMinterApproval } from './useHasMinterApproval'
 import { useMemo } from 'react'
 import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { ManagedTransactionButton } from '../../transactions/transaction-steps/TransactionButton'
 

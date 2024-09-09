@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { Pool } from '../../pool/PoolProvider'
 import { isVebalPool } from '../../pool/pool.helpers'
-import { GqlPoolStakingType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolStakingType } from '@frontend-monorepo/api'
 
 export enum ExpandedPoolType {
   StakedBal = 'staked-bal',

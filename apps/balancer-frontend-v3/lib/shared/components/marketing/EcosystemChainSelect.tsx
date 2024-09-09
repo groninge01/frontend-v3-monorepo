@@ -9,7 +9,7 @@ import { ChevronDown } from 'react-feather'
 import { motion } from 'framer-motion'
 import { pulseOnceWithDelay } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/animations'
 
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { supportedNetworks } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ChainConfig'
 import { gradientMap } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/marketing/useEcosystemPoolActivity'
 

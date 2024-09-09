@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 
-import { GqlPoolElement } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolElement } from '@frontend-monorepo/api'
 
 export const gyroPoolMock: GqlPoolElement = {
   id: '0xdac42eeb17758daa38caf9a3540c808247527ae3000200000000000000000a2b',

@@ -41,7 +41,7 @@ import { isVebalPool, shouldBlockAddLiquidity, calcUserShareOfPool } from '../po
 
 import { getCanStake, migrateStakeTooltipLabel } from '../actions/stake.helpers'
 import { InfoOutlineIcon } from '@chakra-ui/icons'
-import { GqlPoolStakingType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolStakingType } from '@frontend-monorepo/api'
 import { ArrowUpRight } from 'react-feather'
 import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { VeBalLink } from '../../vebal/VebalRedirectModal'

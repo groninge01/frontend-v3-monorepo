@@ -6,7 +6,7 @@ import { PropsWithChildren, createContext, useCallback, useMemo, useState } from
 import { useParams } from 'next/navigation'
 import { PoolVariant } from '../../pool.types'
 import { usePool } from '../../PoolProvider'
-import { GqlPoolEventType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolEventType } from '@frontend-monorepo/api'
 import { usePoolEvents } from '../../usePoolEvents'
 import { slugToChainMap, ChainSlug } from '../../pool.utils'
 import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'

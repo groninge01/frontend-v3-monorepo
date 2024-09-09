@@ -1,7 +1,4 @@
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
 import { VStack, HStack, Skeleton, Text } from '@chakra-ui/react'
 import TokenRow from './TokenRow'

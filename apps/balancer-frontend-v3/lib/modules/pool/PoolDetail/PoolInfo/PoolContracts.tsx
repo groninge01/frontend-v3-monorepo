@@ -19,10 +19,7 @@ import {
 import { usePool } from '../../PoolProvider'
 import { ArrowUpRight } from 'react-feather'
 import { useMemo } from 'react'
-import {
-  GqlPriceRateProviderData,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPriceRateProviderData, GqlToken } from '@frontend-monorepo/api'
 import { Address, zeroAddress } from 'viem'
 import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
 import { TokenIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenIcon'

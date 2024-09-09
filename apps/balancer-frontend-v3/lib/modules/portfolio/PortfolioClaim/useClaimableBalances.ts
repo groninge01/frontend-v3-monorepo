@@ -9,10 +9,7 @@ import { AbiMap } from '../../web3/contracts/AbiMap'
 import { useUserAccount } from '../../web3/UserAccountProvider'
 import { BPT_DECIMALS } from '../../pool/pool.constants'
 import { ClaimablePool } from '../../pool/actions/claim/ClaimProvider'
-import {
-  GqlChain,
-  GqlPoolStakingGaugeReward,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlPoolStakingGaugeReward } from '@frontend-monorepo/api'
 import { groupBy, uniqBy } from 'lodash'
 
 interface ClaimableRewardRef {

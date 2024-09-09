@@ -1,9 +1,6 @@
 import { Address } from 'viem'
 import { OSwapAction, SwapAction } from './swap.types'
-import {
-  GqlChain,
-  GqlSorSwapType,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlSorSwapType } from '@frontend-monorepo/api'
 import {
   getNativeAssetAddress,
   getNetworkConfig,

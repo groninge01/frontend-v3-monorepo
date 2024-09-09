@@ -58,8 +58,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
 .env
+.env.*
 
 # vercel
 .vercel
@@ -74,7 +74,7 @@ next-env.d.ts
 .sentryclirc
 
 # GraphQL Codegen
-**/lib/shared/services/api/generated/
+**/libs/shared/services/api/src/lib/generated/
 
 # Sentry Config File
 .env.sentry-build-plugin

@@ -1,4 +1,4 @@
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { Numberish, bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { ChangeEvent } from 'react'
 import { useTokenBalances } from '../TokenBalancesProvider'

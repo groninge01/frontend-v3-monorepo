@@ -3,10 +3,7 @@
 import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
 import { TokenInput } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInput/TokenInput'
 import { Button, Card, Heading, Text, VStack, useDisclosure } from '@chakra-ui/react'
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { useState } from 'react'
 import { TokenSelectModal } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenSelectModal/TokenSelectModal'
 import { TokenBalancesProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenBalancesProvider'

@@ -2,10 +2,7 @@
 
 import { Box, BoxProps, Button, HStack, Text, Divider } from '@chakra-ui/react'
 import { TokenSelectListRow } from './TokenSelectListRow'
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { useTokenBalances } from '../../TokenBalancesProvider'
 import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
 import { useEffect, useRef, useState } from 'react'

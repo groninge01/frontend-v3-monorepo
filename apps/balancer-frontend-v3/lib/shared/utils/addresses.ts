@@ -4,7 +4,7 @@ import {
 } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
 import { Address, checksumAddress, isAddress } from 'viem'
-import { GqlChain } from '../services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 
 export function isSameAddress(address1: string, address2: string): boolean {
   if (!address1 || !address2) return false

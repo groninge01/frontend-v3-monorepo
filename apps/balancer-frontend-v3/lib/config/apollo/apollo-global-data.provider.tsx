@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /**
  * Apollo Global Data Provider
  *
@@ -7,18 +8,15 @@
  * prior to the useQuery call, ensuring the data is already present on the first
  * client render pass.
  */
-import { getApolloServerClient } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/apollo-server.client'
-import {
-  GetTokenPricesDocument,
-  GetTokensDocument,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetTokenPricesDocument, GetTokensDocument } from '@frontend-monorepo/api'
 import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
 import { TokensProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
-import { FiatFxRatesProvider } from '../../hooks/FxRatesProvider'
-import { getFxRates } from '../../utils/currencies'
+import { FiatFxRatesProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/FxRatesProvider'
+import { getFxRates } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/currencies'
 import { getPoolCategories } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/categories/getPoolCategories'
 import { PoolCategoriesProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/categories/PoolCategoriesProvider'
-import { mins } from '../../utils/time'
+import { mins } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/time'
+import { getApolloServerClient } from './apollo-server.client'
 
 export const revalidate = 60
 

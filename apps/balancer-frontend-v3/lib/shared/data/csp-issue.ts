@@ -1,5 +1,5 @@
 import { PoolId } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.types'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 
 export const NO_RECOVERY_EXIT_POOL_IDS: Record<GqlChain.Mainnet, PoolId[]> = {
   [GqlChain.Mainnet]: [

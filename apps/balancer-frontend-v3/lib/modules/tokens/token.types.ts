@@ -1,4 +1,4 @@
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { Address, HumanAmount } from '@balancer/sdk'
 
 export type TokenBase = Pick<GqlToken, 'address' | 'name' | 'symbol' | 'decimals' | 'chainId'>

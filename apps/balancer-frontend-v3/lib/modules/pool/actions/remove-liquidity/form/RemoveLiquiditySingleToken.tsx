@@ -1,10 +1,7 @@
 'use client'
 
 import TokenRow from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenRow/TokenRow'
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { Box, HStack, Radio, RadioGroup, Text, VStack } from '@chakra-ui/react'
 import { Address } from 'viem'
 import { useRemoveLiquidity } from '../RemoveLiquidityProvider'

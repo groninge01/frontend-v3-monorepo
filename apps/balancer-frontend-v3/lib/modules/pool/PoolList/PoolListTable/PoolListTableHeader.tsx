@@ -2,7 +2,7 @@
 
 import { Grid, GridItem, Icon, Text, VStack } from '@chakra-ui/react'
 import { usePoolListQueryState } from '../usePoolListQueryState'
-import { GqlPoolOrderBy } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolOrderBy } from '@frontend-monorepo/api'
 import { PoolsColumnSort, orderByHash } from '../../pool.types'
 import { usePoolOrderByState } from '../usePoolOrderByState'
 import { Globe } from 'react-feather'

@@ -5,7 +5,7 @@ import {
   UsePortfolio,
   usePortfolio,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/portfolio/PortfolioProvider'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { Address } from 'viem'
 import { useBreakpoints } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBreakpoints'
 import { DesktopStepTracker } from '../../transactions/transaction-steps/step-tracker/DesktopStepTracker'

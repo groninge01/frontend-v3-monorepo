@@ -2,7 +2,7 @@
 
 import { AlertProps, Text } from '@chakra-ui/react'
 import { Address } from 'viem'
-import { GqlChain } from '../../services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { BlockExplorerLink } from '../BlockExplorerLink'
 import { ErrorAlert } from './ErrorAlert'
 

@@ -1,4 +1,4 @@
-import { GqlPoolElement } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolElement } from '@frontend-monorepo/api'
 import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import {
   VAULT,

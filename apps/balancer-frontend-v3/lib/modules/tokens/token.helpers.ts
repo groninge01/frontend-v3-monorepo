@@ -4,7 +4,7 @@ import {
   getWrappedNativeAssetAddress,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { SupportedChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import {
   includesAddress,
   isSameAddress,

@@ -42,7 +42,7 @@ import {
   isNativeOrWrappedNative,
   isNativeAsset,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.helpers'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { NativeAssetSelectModal } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/NativeAssetSelectModal'
 import { useTokenInputsValidation } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInputsValidationProvider'
 import { GenericError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/errors/GenericError'

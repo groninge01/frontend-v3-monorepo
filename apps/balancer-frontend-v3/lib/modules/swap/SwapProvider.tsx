@@ -2,11 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
-import {
-  GqlChain,
-  GqlSorSwapType,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlSorSwapType, GqlToken } from '@frontend-monorepo/api'
 import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { ApolloClient, useApolloClient, useReactiveVar } from '@apollo/client'
 import { PropsWithChildren, createContext, useEffect, useMemo, useState } from 'react'

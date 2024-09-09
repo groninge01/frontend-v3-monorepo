@@ -1,9 +1,5 @@
 /* eslint-disable max-len */
-import {
-  GqlChain,
-  GqlPoolNestingType,
-  GqlPoolType,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlPoolNestingType, GqlPoolType } from '@frontend-monorepo/api'
 import { Pool } from '../PoolProvider'
 
 export const notAllowedPoolMock: Pool = {

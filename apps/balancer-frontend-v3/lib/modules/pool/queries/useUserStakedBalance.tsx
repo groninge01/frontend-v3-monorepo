@@ -1,8 +1,5 @@
 import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
-import {
-  GqlPoolStakingType,
-  GqlUserStakedBalance,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolStakingType, GqlUserStakedBalance } from '@frontend-monorepo/api'
 import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { compact, groupBy } from 'lodash'
 import { Address, formatUnits } from 'viem'

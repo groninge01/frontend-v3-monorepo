@@ -1,4 +1,4 @@
-import { GqlTokenPrice } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlTokenPrice } from '@frontend-monorepo/api'
 import { DeepPartial } from '@apollo/client/utilities'
 
 export function aGqlTokenPriceMock(...options: Partial<GqlTokenPrice>[]): GqlTokenPrice {

@@ -3,10 +3,7 @@ import {
   getWrappedNativeAssetAddress,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { SwapHandler } from './Swap.handler'
-import {
-  GqlSorSwapType,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlSorSwapType, GqlToken } from '@frontend-monorepo/api'
 import { AuraBalSwap, HumanAmount, Slippage, SwapKind, Token, TokenAmount } from '@balancer/sdk'
 import { formatUnits } from 'viem'
 import { TransactionConfig } from '../../web3/contracts/contract.types'

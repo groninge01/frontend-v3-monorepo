@@ -2,7 +2,7 @@ import { useMulticall } from '../web3/contracts/useMulticall'
 import { AbiMap } from '../web3/contracts/AbiMap'
 import { useUserAccount } from '../web3/UserAccountProvider'
 import networkConfigs from '@frontend-monorepo/balancer-frontend-v3/lib/config/networks'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { GaugeArg } from './useVebalBoost'
 import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 

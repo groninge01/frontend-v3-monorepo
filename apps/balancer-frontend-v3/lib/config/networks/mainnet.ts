@@ -1,5 +1,5 @@
 import { PoolIssue } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/alerts/pool-issues/PoolIssue.type'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { convertHexToLowerCase } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/objects'
 import { NetworkConfig } from '../config.types'
 import { CSP_ISSUE_POOL_IDS } from '../../shared/data/csp-issue'

@@ -1,5 +1,5 @@
 import { ProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/config.types'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 
 export const beetsSupportedNetworks = [GqlChain.Fantom, GqlChain.Optimism]
 //  as const satisifies GqlChain[]

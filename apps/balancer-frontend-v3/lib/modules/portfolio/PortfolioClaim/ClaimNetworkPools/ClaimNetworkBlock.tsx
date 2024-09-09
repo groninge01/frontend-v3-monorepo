@@ -1,7 +1,7 @@
 import { NetworkIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/NetworkIcon'
 import { Button, Card, Flex, HStack, Heading, IconButton, Stack } from '@chakra-ui/react'
 import { chainToSlugMap } from '../../../pool/pool.utils'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
 import { useBreakpoints } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBreakpoints'
 import { ChevronRight } from 'react-feather'

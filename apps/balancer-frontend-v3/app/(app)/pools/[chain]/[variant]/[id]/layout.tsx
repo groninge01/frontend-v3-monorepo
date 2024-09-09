@@ -7,13 +7,13 @@ import {
 } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.utils'
 import { PropsWithChildren, Suspense } from 'react'
 import { PoolDetailSkeleton } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolDetail/PoolDetailSkeleton'
-import { getApolloServerClient } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/apollo-server.client'
-import { GetPoolDocument } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetPoolDocument } from '@frontend-monorepo/api'
 import { Metadata } from 'next'
 import { Box } from '@chakra-ui/react'
 import { PoolProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolProvider'
 import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
 import { arrayToSentence } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/strings'
+import { getApolloServerClient } from '@frontend-monorepo/balancer-frontend-v3/lib/config/apollo/apollo-server.client'
 
 type Props = PropsWithChildren<{
   params: Omit<FetchPoolProps, 'chain'> & { chain: ChainSlug }

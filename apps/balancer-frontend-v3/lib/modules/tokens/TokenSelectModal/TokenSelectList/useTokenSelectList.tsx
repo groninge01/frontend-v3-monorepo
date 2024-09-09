@@ -1,7 +1,4 @@
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { useTokens } from '../../TokensProvider'
 import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { orderBy } from 'lodash'

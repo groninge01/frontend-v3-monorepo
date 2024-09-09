@@ -2,7 +2,7 @@ import {
   gyro2CLP_USDC_DAI,
   recoveryModePoolId,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { getPoolMock } from './getPoolMock'
 
 /**

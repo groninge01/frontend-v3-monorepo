@@ -1,4 +1,4 @@
-import { GetAppGlobalPollingDataQuery } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetAppGlobalPollingDataQuery } from '@frontend-monorepo/api'
 import { fakeTokenBySymbol } from '@frontend-monorepo/balancer-frontend-v3/test/data/all-gql-tokens.fake'
 import { aGqlTokenPriceMock } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlTokenPrice.builders'
 

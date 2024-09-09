@@ -1,4 +1,4 @@
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { defaultTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/anvil-setup'
 import { testHook } from '@frontend-monorepo/balancer-frontend-v3/test/utils/custom-renderers'
 import { waitFor } from '@testing-library/react'

@@ -2,7 +2,7 @@ import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/t
 import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { safeSum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { useCallback } from 'react'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { HumanTokenAmountWithAddress } from './token.types'
 
 export function useTotalUsdValue(tokens: GqlToken[]) {

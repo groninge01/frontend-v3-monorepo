@@ -11,7 +11,7 @@ import {
   GqlPoolTokenDetail,
   GqlPoolTokenExpanded,
   GqlTokenPrice,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import {
   FakeTokenSymbol,
   allFakeGqlTokens,

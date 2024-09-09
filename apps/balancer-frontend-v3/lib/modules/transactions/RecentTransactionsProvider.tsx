@@ -3,7 +3,7 @@
 import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { Toast } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/toasts/Toast'
 import { getBlockExplorerTxUrl } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBlockExplorer'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { ensureError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/errors'
 import { captureFatalError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'

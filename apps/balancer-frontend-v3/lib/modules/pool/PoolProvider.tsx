@@ -6,7 +6,7 @@ import {
   GetPoolDocument,
   GetPoolQuery,
   GqlChain,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import { createContext, PropsWithChildren, useRef } from 'react'
 import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr'
 import { FetchPoolProps } from './pool.types'

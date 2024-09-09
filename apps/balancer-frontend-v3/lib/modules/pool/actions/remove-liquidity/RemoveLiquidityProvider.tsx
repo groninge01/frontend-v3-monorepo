@@ -4,7 +4,7 @@
 import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
 import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
 import { LABELS } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/labels'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { isDisabledWithReason } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/functions/isDisabledWithReason'
 import { bn, safeSum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'

@@ -21,7 +21,7 @@ import { ActionModalFooter } from '@frontend-monorepo/balancer-frontend-v3/lib/s
 import { SuccessOverlay } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/modals/SuccessOverlay'
 import { HumanTokenAmountWithAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.types'
 import { useEffect, useMemo, useState } from 'react'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { useResetStepIndexOnOpen } from '../useResetStepIndexOnOpen'
 import { useRouter } from 'next/navigation'
 import { AnimateHeightChange } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/modals/AnimatedModalBody'

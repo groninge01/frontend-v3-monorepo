@@ -4,7 +4,7 @@ import { PortfolioTableHeader } from './PortfolioTableHeader'
 import { PortfolioTableRow } from './PortfolioTableRow'
 import { Card, Center, Checkbox, HStack, Heading, Stack, Text } from '@chakra-ui/react'
 import { useMemo, useState } from 'react'
-import { GqlPoolOrderBy } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolOrderBy } from '@frontend-monorepo/api'
 import { useVebalBoost } from '../../vebal/useVebalBoost'
 import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
 import {

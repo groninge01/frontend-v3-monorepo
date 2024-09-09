@@ -16,7 +16,7 @@ import { RecentTransactionsProvider } from '@frontend-monorepo/balancer-frontend
 import { TransactionStateProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionStateProvider'
 import { UserSettingsProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/user/settings/UserSettingsProvider'
 import { UserAccountProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
-import { GqlPoolElement } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolElement } from '@frontend-monorepo/api'
 import { testWagmiConfig } from '@frontend-monorepo/balancer-frontend-v3/test/anvil/testWagmiConfig'
 import { ApolloProvider } from '@apollo/client'
 import { QueryClientProvider } from '@tanstack/react-query'

@@ -1,4 +1,4 @@
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { isWrappedNativeAsset, swapNativeWithWrapped, swapWrappedWithNative } from './token.helpers'
 import { HumanTokenAmountWithAddress } from './token.types'
 import { ethAddress, wETHAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'

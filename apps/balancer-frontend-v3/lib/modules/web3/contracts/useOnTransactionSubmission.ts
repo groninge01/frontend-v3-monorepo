@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Address } from 'viem'
 import { useRecentTransactions } from '../../transactions/RecentTransactionsProvider'
 import { TransactionLabels } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import {
   AnalyticsEvent,
   trackEvent,

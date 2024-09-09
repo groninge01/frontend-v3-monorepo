@@ -12,10 +12,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import { RefObject } from 'react'
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { NativeAssetSelectList } from './NativeAssetSelectList'
 
 type Props = {

@@ -1,7 +1,7 @@
 import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { BalAlertButton } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/alerts/BalAlertButton'
 import { BalAlertContent } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/alerts/BalAlertContent'
-import { GqlPoolTokenDetail } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolTokenDetail } from '@frontend-monorepo/api'
 import { isNil } from 'lodash'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'

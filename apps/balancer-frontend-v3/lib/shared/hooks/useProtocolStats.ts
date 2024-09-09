@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr'
-import { GetProtocolStatsDocument } from '../services/api/generated/graphql'
+import { GetProtocolStatsDocument } from '@frontend-monorepo/api'
 import { supportedNetworks } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ChainConfig'
 
 export function useProtocolStats() {

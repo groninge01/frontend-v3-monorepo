@@ -3,7 +3,7 @@
 import { getChainShortName } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
 import { NetworkIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/icons/NetworkIcon'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { getSelectStyles } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/chakra/custom/chakra-react-select'
 import { Box, HStack, Text } from '@chakra-ui/react'
 import { Select, OptionBase, GroupBase, SingleValue, chakraComponents } from 'chakra-react-select'

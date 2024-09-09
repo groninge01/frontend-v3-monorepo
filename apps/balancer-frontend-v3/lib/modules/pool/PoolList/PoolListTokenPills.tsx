@@ -1,8 +1,5 @@
 import { Badge, BadgeProps, HStack, Text, Wrap } from '@chakra-ui/react'
-import {
-  GqlChain,
-  GqlPoolTokenDisplay,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlPoolTokenDisplay } from '@frontend-monorepo/api'
 import { PoolListItem } from '../pool.types'
 import { TokenIcon } from '../../tokens/TokenIcon'
 import { fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'

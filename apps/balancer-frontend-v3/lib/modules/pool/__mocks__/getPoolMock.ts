@@ -8,7 +8,7 @@ import {
   GqlChain,
   GetPoolQuery,
   GqlPoolElement,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import { nested50WETH_50_3poolId } from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
 import { Address } from 'viem'
 

@@ -3,7 +3,7 @@ import {
   GqlPoolStakingType,
   GqlPoolUserBalance,
   GqlUserStakedBalance,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import {
   calcNonOnChainFetchedStakedBalance,
   calcTotalStakedBalanceInt,

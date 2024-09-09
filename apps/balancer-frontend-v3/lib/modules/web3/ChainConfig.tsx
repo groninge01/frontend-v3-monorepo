@@ -17,7 +17,7 @@ import {
 } from 'wagmi/chains'
 
 import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { keyBy } from 'lodash'
 import { getBaseUrl } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/urls'
 

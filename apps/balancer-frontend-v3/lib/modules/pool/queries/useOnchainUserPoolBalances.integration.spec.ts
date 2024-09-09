@@ -9,7 +9,7 @@ import { defaultTestUserAccount } from '@frontend-monorepo/balancer-frontend-v3/
 import { ChainId } from '@balancer/sdk'
 import { waitFor } from '@testing-library/react'
 import { useOnchainUserPoolBalances } from './useOnchainUserPoolBalances'
-import { GqlPoolElement } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolElement } from '@frontend-monorepo/api'
 import { connectWithDefaultUser } from '@frontend-monorepo/balancer-frontend-v3/test/utils/wagmi/wagmi-connections'
 
 async function testUseChainPoolBalances(pool: GqlPoolElement) {

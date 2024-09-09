@@ -13,7 +13,7 @@ import {
 import { StepIndicator } from './Step'
 import { Steps } from './Steps'
 import { GasPriceCard } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useGasPrice'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { useThemeColorMode } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/chakra/useThemeColorMode'
 import { TransactionStepsResponse } from '../useTransactionSteps'
 

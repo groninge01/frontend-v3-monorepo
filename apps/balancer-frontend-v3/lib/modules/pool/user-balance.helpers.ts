@@ -4,7 +4,7 @@ import { PoolListItem } from './pool.types'
 import { parseUnits } from 'viem'
 import { BPT_DECIMALS } from './pool.constants'
 import { HumanAmount } from '@balancer/sdk'
-import { GqlPoolStakingType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolStakingType } from '@frontend-monorepo/api'
 import { hasNonPreferentialStakedBalance, hasPreferentialGauge } from './actions/stake.helpers'
 
 export function calcTotalStakedBalance(pool: Pool | PoolListItem): HumanAmount {

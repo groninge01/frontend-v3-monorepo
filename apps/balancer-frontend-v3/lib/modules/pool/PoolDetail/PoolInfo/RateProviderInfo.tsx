@@ -1,8 +1,5 @@
 import { TokenIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenIcon'
-import {
-  GqlPriceRateProviderData,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPriceRateProviderData, GqlToken } from '@frontend-monorepo/api'
 import {
   Popover,
   PopoverTrigger,

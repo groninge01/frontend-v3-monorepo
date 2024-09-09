@@ -12,7 +12,7 @@ import {
   GqlPoolStakingOtherGauge,
   GqlPoolTokenDetail,
   GqlPoolType,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { Numberish, bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import BigNumber from 'bignumber.js'

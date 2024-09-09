@@ -10,7 +10,7 @@ import {
   GqlChain,
   GqlPoolTokenDetail,
   GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { bn, Numberish } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'

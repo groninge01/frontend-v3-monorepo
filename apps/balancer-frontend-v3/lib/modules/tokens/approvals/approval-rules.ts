@@ -3,7 +3,7 @@ import { isNativeAsset } from '@frontend-monorepo/balancer-frontend-v3/lib/share
 import { Address } from 'viem'
 import { MAX_BIGINT } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { InputAmount } from '@balancer/sdk'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { requiresDoubleApproval } from '../token.helpers'
 
 export type TokenAmountToApprove = {

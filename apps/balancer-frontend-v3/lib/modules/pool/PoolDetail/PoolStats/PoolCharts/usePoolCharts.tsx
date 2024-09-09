@@ -6,7 +6,7 @@ import {
   GqlPoolType,
   GqlPoolSnapshotDataRange,
   GqlChain,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr'
 import { useCallback, useMemo, useState } from 'react'
 import { useParams } from 'next/navigation'

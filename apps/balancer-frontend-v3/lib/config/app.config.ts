@@ -1,4 +1,4 @@
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { keyBy } from 'lodash'
 import { Config, NetworkConfig, SupportedChainId } from './config.types'
 import networks from './networks'

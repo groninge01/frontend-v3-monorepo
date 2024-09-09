@@ -1,9 +1,6 @@
 import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { SwapHandler } from './Swap.handler'
-import {
-  GetSorSwapsDocument,
-  GqlSorSwapType,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetSorSwapsDocument, GqlSorSwapType } from '@frontend-monorepo/api'
 import { ApolloClient } from '@apollo/client'
 import { Path, Slippage, Swap, SwapKind, TokenAmount } from '@balancer/sdk'
 import { formatUnits } from 'viem'

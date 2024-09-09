@@ -3,7 +3,7 @@ import {
   getChainId,
   getNativeAssetAddress,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { useMemo } from 'react'

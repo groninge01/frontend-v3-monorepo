@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { usePool } from '../../PoolProvider'
-import { GqlPoolTokenDetail } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolTokenDetail } from '@frontend-monorepo/api'
 import { fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 
 type CompositionRow = {

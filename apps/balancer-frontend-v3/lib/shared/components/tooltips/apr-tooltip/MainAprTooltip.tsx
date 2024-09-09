@@ -20,7 +20,7 @@ import {
 } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolProvider'
 import { isLBP } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/pool.helpers'
 import { getProjectConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/getProjectConfig'
-import { GqlPoolAprItemType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolAprItemType } from '@frontend-monorepo/api'
 
 interface Props
   extends Omit<

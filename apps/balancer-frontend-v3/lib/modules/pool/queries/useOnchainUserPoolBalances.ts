@@ -1,8 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import {
-  GqlPoolUserBalance,
-  GqlUserStakedBalance,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolUserBalance, GqlUserStakedBalance } from '@frontend-monorepo/api'
 import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/addresses'
 import { bn, safeSum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { captureNonFatalError } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'

@@ -3,7 +3,7 @@
 import { Box, BoxProps, HStack, VStack, Text } from '@chakra-ui/react'
 import { TokenIcon } from '../../TokenIcon'
 import { TokenAmount } from '../../token.types'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
 import { useTokens } from '../../TokensProvider'
 import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'

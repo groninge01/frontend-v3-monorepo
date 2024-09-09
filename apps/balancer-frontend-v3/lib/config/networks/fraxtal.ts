@@ -1,4 +1,4 @@
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { NetworkConfig } from '../config.types'
 import { convertHexToLowerCase } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/objects'
 import { CSP_ISSUE_POOL_IDS } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/data/csp-issue'

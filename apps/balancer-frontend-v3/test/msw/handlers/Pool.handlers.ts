@@ -1,7 +1,4 @@
-import {
-  GetPoolDocument,
-  GetPoolQuery,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetPoolDocument, GetPoolQuery } from '@frontend-monorepo/api'
 import { graphql } from 'msw'
 import { getQueryName, mockGQL } from '../utils'
 import { aGqlPoolElementMock } from '../builders/gqlPoolElement.builders'

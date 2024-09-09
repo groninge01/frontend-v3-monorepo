@@ -1,4 +1,4 @@
-import { GqlPoolType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolType } from '@frontend-monorepo/api'
 import { requiresProportionalInput } from '../../LiquidityActionHelpers'
 import { AddLiquidityHandler } from '../handlers/AddLiquidity.handler'
 import { HumanTokenAmountWithAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/token.types'

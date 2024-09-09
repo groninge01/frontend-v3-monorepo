@@ -1,6 +1,6 @@
 import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { Address, Hex } from 'viem'
 import { useTransaction, useWaitForTransactionReceipt } from 'wagmi'
 import {

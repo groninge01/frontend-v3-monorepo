@@ -4,10 +4,7 @@ import { Card, Divider, HStack, Heading, Skeleton, Stack, Text, VStack } from '@
 import React from 'react'
 import { usePool } from '../../PoolProvider'
 import { Address } from 'viem'
-import {
-  GqlChain,
-  GqlPoolTokenDetail,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlPoolTokenDetail } from '@frontend-monorepo/api'
 import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
 import { fNum } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { NoisyCard } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/NoisyCard'

@@ -9,7 +9,7 @@ import { TokenBalancesProvider } from '@frontend-monorepo/balancer-frontend-v3/l
 import { TokenInputsValidationProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenInputsValidationProvider'
 import { useTokens } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokensProvider'
 import { TransactionStateProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/TransactionStateProvider'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { PropsWithChildren } from 'react'
 import { PriceImpactProvider } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactProvider'
 import { DefaultPageContainer } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/DefaultPageContainer'

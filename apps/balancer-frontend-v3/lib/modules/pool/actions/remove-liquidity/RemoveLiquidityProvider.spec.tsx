@@ -1,6 +1,6 @@
 import { balAddress, wETHAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/debug-helpers'
 import { aTokenPriceMock } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/__mocks__/token.builders'
-import { GqlPoolElement } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolElement } from '@frontend-monorepo/api'
 import { aBalWethPoolElementMock } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlPoolElement.builders'
 import { aUserPoolBalance } from '@frontend-monorepo/balancer-frontend-v3/test/msw/builders/gqlUserBalance.builders'
 import { mockTokenPricesList } from '@frontend-monorepo/balancer-frontend-v3/test/msw/handlers/Tokens.handlers'

@@ -2,7 +2,7 @@
 
 import { SuccessOverlay } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/modals/SuccessOverlay'
 import { TransactionModalHeader } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/modals/TransactionModalHeader'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { useDisclosure } from '@chakra-ui/hooks'
 import {
   Button,

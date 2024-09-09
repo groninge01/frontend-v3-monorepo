@@ -16,10 +16,7 @@ import {
   forwardRef,
   useTheme,
 } from '@chakra-ui/react'
-import {
-  GqlChain,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlToken } from '@frontend-monorepo/api'
 import { useTokens } from '../TokensProvider'
 import { useTokenBalances } from '../TokenBalancesProvider'
 import { useTokenInput } from './useTokenInput'

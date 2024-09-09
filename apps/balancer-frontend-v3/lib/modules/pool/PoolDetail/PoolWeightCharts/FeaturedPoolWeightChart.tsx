@@ -1,7 +1,7 @@
 'use client'
 
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
-import { GqlPoolTokenDetail } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
+import { GqlPoolTokenDetail } from '@frontend-monorepo/api'
 import { NoisyCard } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/NoisyCard'
 import { useThemeColorMode } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/chakra/useThemeColorMode'
 import { Box, VStack, useTheme } from '@chakra-ui/react'

@@ -13,7 +13,7 @@ import {
   UseDisclosureProps,
 } from '@chakra-ui/react'
 import { useSwap } from './SwapProvider'
-import { GqlSorSwapType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlSorSwapType } from '@frontend-monorepo/api'
 import { useUserSettings } from '../user/settings/UserSettingsProvider'
 import { usePriceImpact } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/price-impact/PriceImpactProvider'
 import { SdkSimulateSwapResponse } from './swap.types'

@@ -5,7 +5,7 @@ import {
   GqlPoolAprValue,
   GqlPoolMinimal,
   GqlPoolType,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+} from '@frontend-monorepo/api'
 import { DeepPartial } from '@apollo/client/utilities'
 import { mock, mockDeep } from 'vitest-mock-extended'
 

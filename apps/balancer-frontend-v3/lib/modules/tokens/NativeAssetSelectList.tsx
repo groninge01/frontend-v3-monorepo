@@ -2,7 +2,7 @@
 
 import { Box, BoxProps, Center, Text } from '@chakra-ui/react'
 import { TokenSelectListRow } from './TokenSelectModal/TokenSelectList/TokenSelectListRow'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { useTokenBalances } from './TokenBalancesProvider'
 import { useUserAccount } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/UserAccountProvider'
 import { useState } from 'react'

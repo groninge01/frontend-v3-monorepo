@@ -13,7 +13,7 @@ import { Address, encodeFunctionData, formatUnits } from 'viem'
 import { Hex } from 'viem'
 import { bn } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/numbers'
 import { getViemClient } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/viem/viem.client'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 
 const lidoRateProviderMap: Partial<Record<GqlChain, Address>> = {
   [GqlChain.Mainnet]: '0x72d07d7dca67b8a406ad1ec34ce969c90bfee768',

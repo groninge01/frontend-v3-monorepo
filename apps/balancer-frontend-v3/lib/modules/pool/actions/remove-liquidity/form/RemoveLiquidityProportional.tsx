@@ -2,10 +2,7 @@
 'use client'
 
 import TokenRow from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenRow/TokenRow'
-import {
-  GqlPoolType,
-  GqlToken,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolType, GqlToken } from '@frontend-monorepo/api'
 import { Card, Text, VStack, useDisclosure } from '@chakra-ui/react'
 import { Address } from 'viem'
 import { useRemoveLiquidity } from '../RemoveLiquidityProvider'

@@ -14,7 +14,7 @@ import { isSameAddress } from '@frontend-monorepo/balancer-frontend-v3/lib/share
 import { PropsWithChildren, createContext, useState } from 'react'
 import { useMandatoryContext } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/contexts'
 import { getNetworkConfig } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 import { exclNativeAssetFilter, nativeAssetFilter } from './token.helpers'
 
 const BALANCE_CACHE_TIME_MS = 30_000

@@ -1,7 +1,7 @@
 import { ApolloClient } from '@apollo/client'
 import { TransactionConfig } from '../../web3/contracts/contract.types'
 import { BuildSwapInputs, SimulateSwapResponse, SimulateSwapInputs } from '../swap.types'
-import { GqlToken } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlToken } from '@frontend-monorepo/api'
 
 /**
  * SwapHandler is an interface that defines the methods that must be implemented by a handler.

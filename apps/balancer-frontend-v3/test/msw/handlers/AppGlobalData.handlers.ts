@@ -1,4 +1,4 @@
-import { GetAppGlobalPollingDataDocument } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetAppGlobalPollingDataDocument } from '@frontend-monorepo/api'
 import { getQueryName, mockGQL } from '../utils'
 import { graphql } from 'msw'
 import { anAppGlobalData } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/__mocks__/AppGlobalData.builders'

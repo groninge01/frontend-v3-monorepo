@@ -9,7 +9,7 @@ import { SignRelayerState } from '../../relayer/RelayerSignatureProvider'
 import { useMemo } from 'react'
 import { useChainSwitch } from '../../web3/useChainSwitch'
 import { getChainId } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 
 export const signRelayerStepTitle = 'Sign relayer'
 

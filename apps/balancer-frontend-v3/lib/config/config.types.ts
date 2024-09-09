@@ -1,5 +1,5 @@
 import { Address } from 'viem'
-import { GqlChain } from '../shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { chains } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/web3/ChainConfig'
 import { PoolIssue } from '../modules/pool/alerts/pool-issues/PoolIssue.type'
 import { SupportedWrapHandler } from '../modules/swap/swap.types'

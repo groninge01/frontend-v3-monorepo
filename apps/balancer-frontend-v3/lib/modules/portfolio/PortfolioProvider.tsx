@@ -1,6 +1,6 @@
 'use client'
 
-import { GetPoolsDocument } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetPoolsDocument } from '@frontend-monorepo/api'
 import { useQuery as useApolloQuery } from '@apollo/experimental-nextjs-app-support/ssr'
 import { createContext, useCallback, useMemo } from 'react'
 import { useProtocolRewards } from './PortfolioClaim/useProtocolRewards'

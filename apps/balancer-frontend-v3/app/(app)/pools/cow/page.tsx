@@ -1,6 +1,6 @@
 import { PoolList } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/pool/PoolList/PoolList'
 import FadeInOnView from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/containers/FadeInOnView'
-import { GqlPoolType } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlPoolType } from '@frontend-monorepo/api'
 import { Box, Skeleton } from '@chakra-ui/react'
 import { Suspense } from 'react'
 import { Metadata } from 'next'

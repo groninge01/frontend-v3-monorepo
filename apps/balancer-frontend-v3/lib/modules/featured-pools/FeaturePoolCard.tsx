@@ -1,6 +1,6 @@
 'use client'
 
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import { FeaturedPool, Pool } from '../pool/PoolProvider'
 import { useRouter } from 'next/navigation'
 import { VStack, Text, Box, HStack, Image } from '@chakra-ui/react'

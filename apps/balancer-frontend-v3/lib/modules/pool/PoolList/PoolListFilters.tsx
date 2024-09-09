@@ -52,7 +52,7 @@ import { staggeredFadeInUp } from '@frontend-monorepo/balancer-frontend-v3/lib/s
 import { getChainShortName } from '@frontend-monorepo/balancer-frontend-v3/lib/config/app.config'
 import { usePoolList } from './PoolListProvider'
 import { MultiSelect } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/components/inputs/MultiSelect'
-import { GqlChain } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain } from '@frontend-monorepo/api'
 import Image from 'next/image'
 
 const SLIDER_MAX_VALUE = 10000000

@@ -14,10 +14,7 @@ import {
 import { usePool } from '../PoolProvider'
 import { useEffect, useLayoutEffect, useMemo, useState } from 'react'
 import { useCurrency } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useCurrency'
-import {
-  GetPoolEventsQuery,
-  GqlChain,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetPoolEventsQuery, GqlChain } from '@frontend-monorepo/api'
 import { TokenIcon } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/tokens/TokenIcon'
 import { formatDistanceToNow, secondsToMilliseconds } from 'date-fns'
 import { useBlockExplorer } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/hooks/useBlockExplorer'

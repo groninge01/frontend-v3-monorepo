@@ -1,5 +1,5 @@
 import { Box, BoxProps, useColorModeValue } from '@chakra-ui/react'
-import { GqlPoolType } from '../../services/api/generated/graphql'
+import { GqlPoolType } from '@frontend-monorepo/api'
 import {
   isClp,
   isStable,

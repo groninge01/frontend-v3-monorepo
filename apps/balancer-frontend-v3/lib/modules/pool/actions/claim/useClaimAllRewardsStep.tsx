@@ -7,10 +7,7 @@ import {
   TransactionLabels,
   TransactionStep,
 } from '@frontend-monorepo/balancer-frontend-v3/lib/modules/transactions/transaction-steps/lib'
-import {
-  GqlChain,
-  GqlPoolStakingType,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GqlChain, GqlPoolStakingType } from '@frontend-monorepo/api'
 import { sentryMetaForWagmiSimulation } from '@frontend-monorepo/balancer-frontend-v3/lib/shared/utils/query-errors'
 import { useMemo, useState } from 'react'
 import { ManagedTransactionInput } from '../../../web3/contracts/useManagedTransaction'

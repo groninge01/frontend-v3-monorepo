@@ -1,7 +1,4 @@
-import {
-  GetVeBalUserDocument,
-  GqlChain,
-} from '@frontend-monorepo/balancer-frontend-v3/lib/shared/services/api/generated/graphql'
+import { GetVeBalUserDocument, GqlChain } from '@frontend-monorepo/api'
 import { useUserAccount } from '../web3/UserAccountProvider'
 import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr'
 
